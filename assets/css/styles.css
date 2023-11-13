@@ -3,38 +3,40 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   margin: 0%;
-  padding: 0%; 
-} 
+  padding: 0%;
+}
 
-
-/*navbar */
+/****NAVBAR***/
 nav {
   display: flex;
   height: 5rem;
   padding-top: 0.5em;
 }
 
-/*navbar elementos */
+
+/*********NAVBAR ELEMENTOS *****/
 nav li {
   margin-top: 1.5rem;
   margin-right: 2rem;
   font-size: 1.5rem;
-  }
+}
 
-  /*hover visitado*/
+
+/************ETIQUETA CON ENLACE *****************/
+a{
+  color:#ffffff;  
+}
+
+/*HOVER VISITADO*/
 a,
 a:visited {
   text-decoration: none;
-  color: #33354b;
+  color: #27325E;
 }
 
-/*hover*/
-a:hover {
-  color: #ffa400;
-  /*text-shadow: 0.125rem 0.125rem 0.188rem #0ef4a0;  si blur=> valores chiquitos*/
-}
 
-/*encabezado principal  */
+
+/********ENCABEZADO PRINCIPAL********/
 
 h1 {
   font-size: 3.5rem;
@@ -46,35 +48,38 @@ h1 {
   line-height: 3rem;
 }
 
-.pages { 
-  justify-content: center; 
+.pages {
+  justify-content: center;
 }
 
 ul {
   width: 100%;
   display: flex;
   justify-content: right;
-  list-style: none; /*para que no se vean bullets de la lista*/
+  list-style: none;
+  /*para que no se vean bullets de la lista*/
 }
 
 li {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   margin-top: 1rem;
-
+ 
 }
 
+/**********************BOTÓN DEL LOGIN******************************/
 #login {
   margin-top: 1rem;
-  background-color: #ffa400; 
-  color:#ffffff;
+  background-color: #ffa400;
+  color: #ffffff;
   margin-right: 5rem;
 }
 
 #login:hover {
   background-color: #33354b;
-  color:#ffffff
+  color: #ffffff
 }
 
+/************BOTÓN FORMULARIO************/
 button {
   width: 10rem;
   height: 2.5rem;
@@ -85,6 +90,15 @@ button {
   border: none;
 }
 
+
+/******************PARA QUE TOME TODA EL AREA DEL BOTÓN************************/
+button a {
+  display: block; 
+  height: 80%;
+  position: relative;
+}
+
+
 p {
   width: 30%;
   font-size: 1.5rem;
@@ -92,23 +106,26 @@ p {
   font-size: 2rem;
 }
 
+
 .logo {
   width: 13rem;
   margin-top: 1rem;
   margin-left: 6rem;
 }
 
+
 section {
   height: 30rem;
   padding-left: 5rem;
   padding-right: 5rem;
- }
+}
 
 .banner {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
- }
+}
+
 
 .tagline {
   width: 32%;
@@ -116,29 +133,34 @@ section {
   margin-top: 1rem;
 }
 
+
 h2 {
   text-align: left;
   margin-left: 1rem;
   margin-top: 0.2rem;
-  width: 100%; /*el ancho que ocupa es el 100% del contenedor h2*/
+  width: 100%;        /*el ancho que ocupa es el 100% del contenedor h2*/  
   color: #ffa400;
   font-weight: 200;
   font-size: 2.3rem;
   line-height: 2.5rem;
 }
 
+
 /*chamuyo marketinero*/
 p {
   font-weight: bold;
   color: #33354b;
   font-size: 1.8rem;
-  width: 90%; /*el ancho que ocupa es el 100% del contenedor p*/
+  width: 90%;
+  /*el ancho que ocupa es el 100% del contenedor p*/
 }
 
 .bullets {
-  width: 100%; /* 100 x ciento dentro del contenedor tagline*/
+  width: 100%;
+  /* 100 x ciento dentro del contenedor tagline*/
   font-size: 0.5rem;
-  display: inline-block; /*alinear los li verticalmente uno abajo del otro*/
+  display: inline-block;
+  /*alinear los li verticalmente uno abajo del otro*/
   line-height: 1rem;
   margin-left: 1rem;
 }
@@ -181,24 +203,24 @@ p {
   justify-content: center;
 }
 
-.boton2{ 
+.boton2 {
   top: 1rem;
   width: 10rem;
   height: 2.5rem;
   border-radius: 2rem;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   border: none;
-  position: relative;/*posicion relativa a su contenedor*/  
+  position: relative;
+  /*posicion relativa a su contenedor*/
 }
 
 /*botón ancla al formulario*/
-.submit2{
-  margin:0 auto;
+.registro {
+  margin: 0 auto;
   justify-content: center;
-  text-align:center;
-  margin-top: 3rem;
+  text-align: center;
   height: 3.5rem;
-  width: 12rem;   
+  width: 12rem;
   margin-bottom: 3rem;
   border-radius: 2rem;
   font-size: 1.3rem;
@@ -216,10 +238,12 @@ p {
   text-decoration: none;
   color: #ffffff;
 }
+
 /*Esto va a funcionar cuando conecte con php el formulario de contacto?*/
 
 label {
-  display: inline-block; /*alinear los elementos verticalmente uno abajo del otro*/
+  display: inline-block;
+  /*alinear los elementos verticalmente uno abajo del otro*/
   width: 100%;
   text-align: center;
   align-self: center;
@@ -229,7 +253,7 @@ label {
 
 input {
   text-align: center;
-  width: 80%;
+  width: 60%;
   height: 2rem;
   border: none;
   margin-top: 0.5rem;
@@ -244,20 +268,21 @@ input {
 }
 
 fieldset {
-  border: none;  
+  border: none;
   text-align: center;
 }
 
-/*Sección de 3 pasos*/
+/***********sección 3 pasos*************/
 .analizando {
   background-color: #5296e7;
-  margin: 6rem 0;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 .icons {
   width: 100%;
   height: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -288,6 +313,7 @@ h4 {
 .row {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .card {
@@ -321,17 +347,19 @@ h6 {
 
 /*fin de Sección de reviews*/
 
-/*SECCIÓN CALL TO ACTION*/
+/******SECCIÓN CALL TO ACTION********/
 
 .call-to-action {
   margin-top: 1rem;
+  margin-bottom: 3rem;
   background-color: #5296e7;
-  height:15rem;
+  height: 15rem;
+
 }
 
 /*botón del formulario de contacto*/
-.submit { 
-  text-align: center; 
+.submit {
+  text-align: center;
   justify-content: center;
 }
 
@@ -354,23 +382,23 @@ h6 {
 /*Titulo de preguntas frecuentes*/
 .titulo-faq {
   text-align: center;
-  margin-bottom: 1rem; 
-  margin-top: 1rem; 
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-size: 2.5rem;
   justify-items: center;
 }
 
 
-.faq ul { 
-  width:100%; 
+.faq ul {
+  width: 100%;
   display: inline-block;
-  justify-content: center; 
+  justify-content: center;
 }
 
 /*elementos de preguntas frecuentes*/
 .faq ul li {
   width: 100%;
-  position: relative;  
+  position: relative;
   float: none;
   text-align: center;
 }
@@ -389,156 +417,162 @@ h6 {
 .somos {
   display: inline-block;
   text-align: left;
-  width: 35rem;  
+  width: 35rem;
   padding-top: 1rem 0 0 1rem;
-  font-size: 1.4rem; 
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .quienes-somos h4 {
   color: #5296e7;
   font-size: 2rem;
   font-weight: 900;
-  text-align:left;
+  text-align: left;
   padding-left: 1rem;
 }
 
-b{
-  font-weight:900;
+b {
+  font-weight: 900;
 }
+
 /*fin subpágina quienes somos*/
 
 /********************INICIO PÁGINA LOGIN*********************/
 
-.login-container {
+
+/****************CONTENEDOR PRINCIPAL DE LA PÁGINA*******************/
+.main-login {
   display: flex;
   justify-content: center;
-  height: 75vh;
-  top:4rem;
+  height: 79vh;
+  top: 4rem;
+ }
+
+
+ /*******************TITULO INGRESÁ***********************/
+
+  
+ .form-login h4 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+ 
 }
 
-.singin{
-  width: 40rem;
-  height: 40rem;
-  border-radius: 5%;
-  background-color:#27325E;
+ /**************************FORMULARIO LOGIN********************************/
+
+
+.form-login {
+  background-color: #1e7dd1;
+  width: 35rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: auto;
+  justify-content: right;
+  font-family: roboto, "Helvetica Neue";
+  box-shadow: 0, 0, 40px, -10px;
+  border-color: #33354b;
+  box-shadow: 5px 7px 10px #a889a8;
+  text-shadow: #433543;
 }
 
-.contacto{
-  color:#33354b;
+.contacto {
+  color: #33354b;
   font-size: 1.5rem;
   padding: 2rem;
-  line-height: 1.5rem; /*interlineado*/
-}
-  
-
-
-.imagen-login{
-  height:100%;
- display:flex;
-
+  line-height: 1.5rem;
+  /*interlineado*/
 }
 
-.login{
+
+.imagen-login {
+  height: 100%;
+  display: flex;
+
+}
+
+.login {
   height: 85%;
-  display:flex;
+  display: flex;
   justify-content: right;
   background-color: #433543;
 }
 
-/********************FIN PÁGINA LOGIN*********************/
+
+p .login{
+  font-size:0.5rem;
+}
+
+/*************FIN PÁGINA LOGIN************/
 
 
 
-/********************INICIO PÁGINA REGISTRO*********************/
+/**************INICIO PÁGINA REGISTRO*************/
 
-/*FORMULARIO DE REGISTRO*/
-.form-register{
-  background-color: #a7d9f0;
+/*****FORMULARIO DE REGISTRO*******/
+.form-register {
+  background-color: #1e7dd1;
   width: 35rem;
-  height:auto;
+  height: auto;
   border-radius: 1rem;
   padding: 2rem;
-  margin:auto; 
-  justify-content:right;
-font-family: roboto, "Helvetica Neue",
+  margin: auto;
+  justify-content: right;
+  font-family: roboto, "Helvetica Neue";
+  box-shadow: 0, 0, 40px, -10px;
+  border-color: #33354b;
+  box-shadow: 5px 7px 10px #a889a8;
+  text-shadow: #433543;
 }
 
 
-.main-register{
+.main-register {
   height: 78vh;
-  margin-top:3rem;
-  background-color: #a889a8;
+  margin-top: 3rem; 
   display: flex;
   justify-content: space-between;
 }
 
-.form-register h4{
+.form-register h4 {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-align: center;
-  font-size: 2rem;
-
+ 
 }
 
-.controls{
-  width: 100%;
-  padding: 0.625;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ebebe3 ;
-  font-size: 1rem;
-}
-
-
-
-.form-register p{
+.form-register p {
   height: 2.5rem;
   text-align: center;
   font-size: 1rem;
-
 }
 
-.form-register a{
-  color:#ffffff;
+.form-register a {
+  color: #ffffff;
   text-decoration: none;
-
 }
 
-.form-register a :hover{
-  color:#ffffff;
+.form-register a :hover {
+  color: #ffffff;
   text-decoration: underline;
-  
 }
 
-.form-register .botons{
- height: 3rem;
- width: 10rem;
-  background: #5383eb;
-  border-radius:2rem;
-  border:none;
-  padding:1rem;
-  color:#ffffff;  
-  font-size: 1.2rem;
-  display: flex;
-  margin:0 auto;
-  text-align: center;
-}
-.foto registro{
+
+.foto-registro {
   display: flex;
   justify-content: left;
-  width: 25%;
-  border:none;
-
+ margin-top:1.5rem;
+ margin-left: 4.5rem;
+ width: 50rem;
 }
-/*footer todas las páginas*/
+
+/***************footer todas las páginas*******************/
 footer {
-  background-color: #33354b;
+  background-color: #33374b;
   width: 100%;
   height: 6rem;
   padding-top: 1rem;
-  
- }
+}
 
 
 footer ul {
@@ -547,82 +581,146 @@ footer ul {
 }
 
 
-footer li {    
-  margin:0.5rem;
-  height:auto;
+footer li {
+  margin: 0.5rem;
+  height: auto;
 }
 
 
 
 .copyright {
   color: #ffffff;
- font-size: 1.3rem;
- margin-bottom: 1rem;
-text-align: center;
-margin:0 auto;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
 /*fin footer todas las páginas*/
 
 
-/*PÁGINA DE AGRADECIMENTO*/
+/*********************PÁGINA DE AGRADECIMENTO*********************/
 
 /*contenedor página de agradecimiento*/
-.agradecimiento{
-  color:#5383eb;
+.agradecimiento {
+  color: #5383eb;
   font-size: 4rem;
   display: inline-block;
- justify-content: center;
- width: 100%;
- height: 78vh;
- margin: 0 auto;
-  }
-
-/*contenedor del bloque de texto*/
-  .texto-agradecimiento{
-    margin-top: 3rem;
-    text-align: center;
-    }
-
-/*Texto que tiene la palabra gracias*/
-.gracias{ 
-  width:35rem; 
-   background-color: #5383eb;
-   margin: 0 auto;
-   align-self: center;
-   font-size: 5rem;
-   font-weight: 900;
-  }
-
-
-.shaking-hands{
-  width:5rem;/*el width de 100x ciento no sirve para alinear contendio porque el espacio de la imagen ocupa el 100 del dom entonces no se centra*/
-/**foto de apretón de manos*/
-margin:0 auto;
-margin-top: 4rem;
+  justify-content: center;
+  width: 100%;
+  height: 78vh;
+  margin: 0 auto;
 }
 
-/*grid para servicios*/
+/*contenedor del bloque de texto*/
+.texto-agradecimiento {
+  text-align: center;
+  margin: 0 auto;
+}
 
+/*Texto que tiene la palabra gracias*/
+.gracias {
+  width: 25rem;
+  margin: 0 auto;
+  align-self: center;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+
+.cont-shaking {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+
+.shaking-hands {
+  margin: 0 auto;
+  margin-top: 4rem;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/*********FIN PÁGINA DE AGRADECIMENTO********/
+
+/**********PÁGINA DE SERVICIOS*********/
+
+/**********grid para servicios*********/
 .wrapper {
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-rows: repeat(3, auto); /**cantidad de columnas de elementos, tamaño /
+  grid-template-rows: repeat(3, auto);
+  /**cantidad de columnas de elementos, tamaño /
   grid-gap: 1rem; /*espaciados entre elementos*/
   grid-auto-flow: column;
   grid-auto-columns: 33% 33% 33%;
   text-align: center;
   border-color: #27325E;
-  height:100%;
-  }
+  height: 100%;
+}
 
-.services-main{
+.services-main {
   height: 70vh;
 }
 
-.historial_medico{
-  height:3rem;
+.historial_medico {
+  height: 3rem;
   width: 3rem;
+}
+
+
+/******noticias*******/
+
+.main-noticias{
+ 
+  background-color: blue;
+}
+/**titulo noticias****/
+.noticias{
+  font-size: 2.5rem;
+  color: #5383eb;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*****Articulos*****/
+.bienestar{
+  background-color: #00ffff;
+
+}
+
+.programas{
+  background-color: #a889a8;
+
+}
+
+.educación{
+  background-color: #ffa400;
+}
+
+aside{
+  background-color: #a889a8;
+}
+
+.innovaciones{
+  background-color: #33374b;
+}
+
+.convenios{
+  background-color: #00ffff;
+}
+
+.main-noticias article{
+  height:20rem;
+}
+
+aside{  
+  float: left;
+  height: 45rem;
+  width: 60rem;
 }
