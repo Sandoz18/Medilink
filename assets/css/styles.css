@@ -22,9 +22,9 @@ nav li {
 }
 
 
-/************ETIQUETA CON ENLACE *****************/
-a{
-  color:#ffffff;  
+/************ETIQUETA a CON HOVER *****************/
+a {
+  color: #ffffff;
 }
 
 /*HOVER VISITADO*/
@@ -63,7 +63,7 @@ ul {
 li {
   font-size: 1.2rem;
   margin-top: 1rem;
- 
+
 }
 
 /**********************BOTÓN DEL LOGIN******************************/
@@ -93,7 +93,7 @@ button {
 
 /******************PARA QUE TOME TODA EL AREA DEL BOTÓN************************/
 button a {
-  display: block; 
+  display: block;
   height: 80%;
   position: relative;
 }
@@ -138,7 +138,8 @@ h2 {
   text-align: left;
   margin-left: 1rem;
   margin-top: 0.2rem;
-  width: 100%;        /*el ancho que ocupa es el 100% del contenedor h2*/  
+  width: 100%;
+  /*el ancho que ocupa es el 100% del contenedor h2*/
   color: #ffa400;
   font-weight: 200;
   font-size: 2.3rem;
@@ -165,7 +166,7 @@ p {
   margin-left: 1rem;
 }
 
-/*IMAGEN BANNER*/
+/********IMAGEN BANNER**********/
 .medico {
   width: 100%;
   height: auto;
@@ -173,7 +174,7 @@ p {
   margin-right: 2rem;
 }
 
-/*FORMULARIO DE CONTACTO DEL BANNER*/
+/**********FORMULARIO DE CONTACTO DEL BANNER*******************/
 .contact-form {
   background-color: #b8e0ff;
   border-radius: 8%;
@@ -237,6 +238,11 @@ p {
 .submit:visited {
   text-decoration: none;
   color: #ffffff;
+}
+
+a:hover {
+  color: #ffa400;
+  /*text-shadow: 0.125rem 0.125rem 0.188rem #0ef4a0;  si blur=> valores chiquitos*/
 }
 
 /*Esto va a funcionar cuando conecte con php el formulario de contacto?*/
@@ -446,20 +452,20 @@ b {
   justify-content: center;
   height: 79vh;
   top: 4rem;
- }
+}
 
 
- /*******************TITULO INGRESÁ***********************/
+/*******************TITULO INGRESÁ***********************/
 
-  
- .form-login h4 {
+
+.form-login h4 {
   color: #ffffff;
   font-size: 3rem;
   text-align: center;
- 
+
 }
 
- /**************************FORMULARIO LOGIN********************************/
+/**************************FORMULARIO LOGIN********************************/
 
 
 .form-login {
@@ -500,8 +506,8 @@ b {
 }
 
 
-p .login{
-  font-size:0.5rem;
+p .login {
+  font-size: 0.5rem;
 }
 
 /*************FIN PÁGINA LOGIN************/
@@ -529,7 +535,7 @@ p .login{
 
 .main-register {
   height: 78vh;
-  margin-top: 3rem; 
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -538,7 +544,7 @@ p .login{
   color: #ffffff;
   font-size: 3rem;
   text-align: center;
- 
+
 }
 
 .form-register p {
@@ -561,9 +567,9 @@ p .login{
 .foto-registro {
   display: flex;
   justify-content: left;
- margin-top:1.5rem;
- margin-left: 4.5rem;
- width: 50rem;
+  margin-top: 1.5rem;
+  margin-left: 4.5rem;
+  width: 50rem;
 }
 
 /***************footer todas las páginas*******************/
@@ -571,7 +577,8 @@ footer {
   background-color: #33374b;
   width: 100%;
   height: 6rem;
-  padding-top: 1rem;
+  padding-top: 1rem; 
+ position:relative
 }
 
 
@@ -675,12 +682,13 @@ footer li {
 
 /******noticias*******/
 
-.main-noticias{
- 
+.main-noticias {
+
   background-color: blue;
 }
+
 /**titulo noticias****/
-.noticias{
+.noticias {
   font-size: 2.5rem;
   color: #5383eb;
   font-weight: 800;
@@ -689,38 +697,222 @@ footer li {
 }
 
 /*****Articulos*****/
-.bienestar{
+.bienestar {
   background-color: #00ffff;
 
 }
 
-.programas{
+.programas {
   background-color: #a889a8;
 
 }
 
-.educación{
+.educación {
   background-color: #ffa400;
 }
 
-aside{
+aside {
   background-color: #a889a8;
 }
 
-.innovaciones{
+.innovaciones {
   background-color: #33374b;
 }
 
-.convenios{
+.convenios {
   background-color: #00ffff;
 }
 
-.main-noticias article{
-  height:20rem;
+.main-noticias article {
+  height: 20rem;
+
 }
 
-aside{  
-  float: left;
-  height: 45rem;
-  width: 60rem;
+aside {
+  justify-self: right;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #27325E;
+  height: 80vh;
+  width: 60%;
+}
+
+
+
+
+/******************************DASHBOARD****************************/
+
+/*****MAIN*******/
+
+.main-dashboard {
+  height: 100vh;
+   background-color: #ffa400;
+}
+
+
+.principal-dashboard {
+  height: auto;
+  background-color: #ffa400;
+
+}
+
+
+.bienvenida {
+  width: auto;
+  height: 8rem;
+  background-color: #27325E;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 7rem;
+  margin-right: -5rem;
+  margin-left: -5rem;
+}
+
+.texto-bienvenida{
+  color:#ffa400;
+}
+
+.ficha-medico{  
+  display: inline-block;
+}
+
+.aside-dashboard {
+  max-width: 25%;
+  flex-direction: column;
+  height: 70vh;
+  display: flex;
+  background-color: #27325E;
+  z-index: 10;
+  margin-left: -5rem;
+
+}
+
+.menu-vertical {
+  color: #ffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  background-color: #eb0c0c;
+  height:100%;
+  width:auto;
+
+}
+
+.menu-vertical .li{
+  background-color: #354336;
+  height: 80vh;
+ 
+}
+
+.medico-dash {
+  width: 60%;
+  z-index: index 1; 
+  background-color: #b8e0ff;
+  margin: 0 auto;
+  
+}
+
+.nombre{
+  font-size: 2rem;
+  color: #FFFFFF;  
+  background-color: #433543;
+}
+
+.especialidad{
+  font-size: 1.5;
+  color: #FFFFFF; 
+  background-color: #ffa400;
+  text-decoration: overline;
+  margin: 0 auto;
+}
+
+/************Barra de Busqueda*****************/
+
+#buscador {
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+  background-size: 24px;
+  width: 500px;
+  border: transparent;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 10px 10px 30px;
+  background-color: #ffffff;
+
+
+}
+
+/****************calendario***************************/
+
+.calendario{
+margin-right: 2rem;
+
+}
+
+.mes-calendario{
+  margin-top: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #1FBE92;
+  border-color:#2A4473;
+  border-style: inset;
+  width: 69.5%;  
+  height: 5rem;
+  color: #e9e6df;
+  justify-content: center;
+  margin-right: 2rem;
+}
+/*CONTENIDO*****/
+table{
+  margin-top: 3rem;
+  background-color: #2A4473;
+  width: 70%;
+  height: auto;
+  align-self: center;
+  margin: 0 auto;
+}
+
+
+
+th{
+  border-color:#2A4473;
+  border-width:4px;
+  border-style:inset; 
+}
+td {
+  border-color: #1a181a;
+  border-width: 2px;
+  border-style: inset;
+}
+
+/*celdas*/
+th {
+  width: 200px;
+  height: 50px;
+  background:#1FBE92;
+  max-width: 500px;
+}
+
+tr {
+  width: 100px;
+  height: 100px;
+  background:#ede8e8;
+  max-width: 500px;
+}
+
+/*****RELLENO CELDAS******/
+h1{
+  text-align: center;
+  color:#2A4473;
+  font-weight: 900;
+}
+table{
+  color:#2A4473;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
