@@ -11,6 +11,7 @@ nav {
   display: flex;
   height: 5rem;
   padding-top: 0.5em;
+ 
 }
 
 
@@ -19,19 +20,24 @@ nav li {
   margin-top: 1.5rem;
   margin-right: 2rem;
   font-size: 1.5rem;
+  color: #27325E;
 }
 
 
 /************ETIQUETA a CON HOVER *****************/
+
+
+
 a {
-  color: #ffffff;
+  color:#27325E;
 }
 
 /*HOVER VISITADO*/
 a,
 a:visited {
   text-decoration: none;
-  color: #27325E;
+  color: #fff;
+  
 }
 
 
@@ -41,15 +47,15 @@ a:visited {
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: #33354b;
+  color: #27325E;
   margin-top: 1rem;
-  margin-left: 1rem;
   font-weight: bold;
   line-height: 3rem;
 }
 
 .pages {
   justify-content: center;
+  
 }
 
 ul {
@@ -57,6 +63,7 @@ ul {
   display: flex;
   justify-content: right;
   list-style: none;
+  color: #27325E;
   /*para que no se vean bullets de la lista*/
 }
 
@@ -75,7 +82,7 @@ li {
 }
 
 #login:hover {
-  background-color: #33354b;
+  background-color:#27325E;
   color: #ffffff
 }
 
@@ -237,7 +244,8 @@ p {
 
 .submit:visited {
   text-decoration: none;
-  color: #ffffff;
+  background-color: #33354b;
+  color: #ffffff
 }
 
 a:hover {
@@ -576,9 +584,9 @@ p .login {
 footer {
   background-color: #33374b;
   width: 100%;
-  height: 6rem;
-  padding-top: 1rem; 
- position:relative
+  height: 8rem;
+  padding-top: 1rem;
+  position: relative
 }
 
 
@@ -591,6 +599,13 @@ footer ul {
 footer li {
   margin: 0.5rem;
   height: auto;
+}
+
+.mailto {
+  background-color: #ffa400;
+  height: 3rem;
+  margin: 0 auto;
+  width: 2rem;
 }
 
 
@@ -680,26 +695,30 @@ footer li {
 }
 
 
-/******noticias*******/
+/*******************************NOTICIAS*************************/
 
 .main-noticias {
 
-  background-color: blue;
+  color: #ffa400;
 }
 
 /**titulo noticias****/
 .noticias {
   font-size: 2.5rem;
-  color: #5383eb;
+  color: #2A4473;
   font-weight: 800;
   text-align: center;
   margin-top: 2rem;
+  text-decoration: underline;
+  list-style:outside;
 }
 
 /*****Articulos*****/
 .bienestar {
   background-color: #00ffff;
-
+  display:flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .programas {
@@ -725,7 +744,7 @@ aside {
 
 .main-noticias article {
   height: 20rem;
-
+font-size: 2rem;
 }
 
 aside {
@@ -748,43 +767,46 @@ aside {
 /*****MAIN*******/
 
 .main-dashboard {
+  width: 100%;
   height: 100vh;
-   background-color: #ffa400;
+  flex-direction: column;
+}
+
+.contenedor-dasboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
 }
 
 
 .principal-dashboard {
-  height: auto;
-  background-color: #ffa400;
-
+  width: 100%;
+  height: 100%;
 }
 
-
 .bienvenida {
-  width: auto;
+  width: 100%;
   height: 8rem;
   background-color: #27325E;
   color: #FFFFFF;
   font-size: 2.5rem;
-  text-align: center;
+  text-align: right;
   line-height: 7rem;
-  margin-right: -5rem;
-  margin-left: -5rem;
 }
 
-.texto-bienvenida{
-  color:#ffa400;
+.texto-bienvenida {
+  color: #ffa400;
 }
 
-.ficha-medico{  
+.ficha-medico {
   display: inline-block;
+  padding-left: 5rem;
 }
 
 .aside-dashboard {
   max-width: 25%;
-  flex-direction: column;
-  height: 70vh;
-  display: flex;
+  height: 100vh;
   background-color: #27325E;
   z-index: 10;
   margin-left: -5rem;
@@ -794,83 +816,116 @@ aside {
 .menu-vertical {
   color: #ffff;
   font-size: 1.5rem;
-  font-weight: 500;
-  display:flex;
+  font-weight: 500; 
+  height: 70vh;
+  width: 100%;
   justify-content: center;
-  background-color: #eb0c0c;
-  height:100%;
-  width:auto;
-
+  margin-top: 2rem;
 }
 
-.menu-vertical .li{
-  background-color: #354336;
-  height: 80vh;
- 
+.menu-vertical ul {
+  color: #ffff;
+  height: auto;
+  display: inline-block;
+  justify-content: center;
 }
+
+
+
+.menu-vertical li {
+  color: #ffff;
+  height: fit-content;
+  width: 100%;
+  font-size: 1.3rem;
+  justify-content:left;
+}
+
 
 .medico-dash {
   width: 60%;
-  z-index: index 1; 
-  background-color: #b8e0ff;
+  z-index: index 1;
   margin: 0 auto;
-  
+  height: auto;
 }
 
-.nombre{
+.nombre {
   font-size: 2rem;
-  color: #FFFFFF;  
-  background-color: #433543;
+  color: #FFFFFF;
+  height: auto;
 }
 
-.especialidad{
+.especialidad {
   font-size: 1.5;
-  color: #FFFFFF; 
-  background-color: #ffa400;
-  text-decoration: overline;
+  color: #FFFFFF;
+  text-decoration: underline;
   margin: 0 auto;
 }
+
+
 
 /************Barra de Busqueda*****************/
 
 #buscador {
-  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
-  background-size: 24px;
-  width: 500px;
+  background: size 1.8rem;
+  width: 25.25rem;
+  height: 3.2rem;
   border: transparent;
   border-bottom: solid 1px #ccc;
-  padding: 10px 10px 10px 30px;
   background-color: #ffffff;
+  border-radius: 0.7rem;
+  margin-right: 7rem;
+
+}
 
 
+.buscador-bienvenida {
+  display: inline-block;
+  justify-content: center;
+  margin-right: 8rem;
 }
 
 /****************calendario***************************/
 
-.calendario{
-margin-right: 2rem;
 
+/*****************contenedor general del calendario***********************/
+.calendario-container {
+  background-color: #a889a8;
+  width: 70%;
+  display:inline-block;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.mes-calendario{
+/*****************contenedor general del calendario***********************/
+.calendario {
+ 
+  margin-right: 2rem;
+  margin: 0 auto;
+}
+
+/******contenedor superior calendario******/
+.mes-calendario {
+
   margin-top: 3rem;
   font-size: 3rem;
   text-align: center;
   margin: 0 auto;
   background-color: #1FBE92;
-  border-color:#2A4473;
+  border-color: #2A4473;
   border-style: inset;
-  width: 69.5%;  
+  width: 99.5%;
   height: 5rem;
   color: #e9e6df;
   justify-content: center;
   margin-right: 2rem;
 }
-/*CONTENIDO*****/
-table{
+
+
+
+/**********CONTENIDO cuerpo calendario*****/
+table {
   margin-top: 3rem;
-  background-color: #2A4473;
-  width: 70%;
+  width: 100%;
   height: auto;
   align-self: center;
   margin: 0 auto;
@@ -878,14 +933,15 @@ table{
 
 
 
-th{
-  border-color:#2A4473;
-  border-width:4px;
-  border-style:inset; 
+th {
+  border-color: #2A4473;
+  border-width: 1px;
+  border-style: inset;
 }
+
 td {
   border-color: #1a181a;
-  border-width: 2px;
+  border-width: 0.5px;
   border-style: inset;
 }
 
@@ -893,26 +949,31 @@ td {
 th {
   width: 200px;
   height: 50px;
-  background:#1FBE92;
+  background: #1FBE92;
   max-width: 500px;
 }
 
 tr {
   width: 100px;
   height: 100px;
-  background:#ede8e8;
+  background: #ede8e8;
   max-width: 500px;
 }
 
 /*****RELLENO CELDAS******/
-h1{
+h1 {
   text-align: center;
-  color:#2A4473;
+  color: #2A4473;
   font-weight: 900;
 }
-table{
-  color:#2A4473;
+
+table {
+  color: #2A4473;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 900;
 }
+
+/**************************NOTICIAS*******************************/
+
+

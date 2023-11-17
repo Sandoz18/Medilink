@@ -47,37 +47,45 @@
     </header>
     <!--------comienzo main----------->
     <main class="main-dashboard">
-        <section>
+        <!--area principal del dashboard-->        
             <div class="principial-dashboard">
-                <div class="bienvenida"><b class="texto-bienvenida">¡¡Bienvenido </b> Dr. Juan Perez!!</div>
-                <input type="search" placeholder="Buscar paciente" id="buscador">
-
-                <aside class="aside-dashboard">
+                <!--area busqueda y bienvenida-->  
+                <div class="bienvenida">
+                    <b class="texto-bienvenida">Bienvenido </b> Dr. Juan Perez!!  
+                    <div class="buscador-bienvenida">
+                        <input type="search" placeholder="Buscar paciente" id="buscador" >
+                        
+                    </div> 
+                    </div>                  
+                    
+                <section class="contenedor-dashboard">
+                <aside class="aside-dashboard">                 
                     <div class="ficha-medíco">
                         <figure>
                             <img class="medico-dash" src="/assets/img/imagenes dashboard/foto-señor-cardiologo.png"
                                 alt="foto-portada-medilink">
                         </figure>
                         <p class="nombre">Juan Perez</p>
-                        <p class="especialidad">Cardiologo</p>
+                        <p class="especialidad">Cardiólogo</p>
                     </div>
+             
                     <div class="menu-vertical">
                         <ul>
-                            <li><a href="#"></a><i class="fas fa-regular fa-calendar-check"></i> Calendario</li>
-                            <li><a href="#"></a><i class="fas fa-regular fa-envelope"></i> Inbox</li>
-                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i></a>Órdenes</li>
-                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i></a> Escribir Post</li>
-                            <li><a href="#"></a><i class="fa fa-sharp fa-regular fa-circle-user"></i> Información Médica
-                            </li>
-                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i></a>Comentarios</li>
-                            <li><a href="#"></a><i class="fas fa-regular fa-gear"></i> Configuraciones</li>
+                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Calendario</a></li>
+                            <li><a href="#"><i class="fas fa-regular fa-envelope"></i> Inbox</a></li>
+                            <li><a href="#"><i class="fas fa-regular fa-file"></i> Órdenes</a></li>
+                            <li><a href="#"><i class="fas fa-regular fa-pen"></i> Escribir Post</a></li>
+                            <li><a href="#"><i class="fas fa-regular fa-file-medical"></i> Información Médica</a></li>
+                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Comentarios</a></li>
+                            <li><a href="#">Configuraciones</a></li>
                         </ul>
                     </div>
                 </aside>
-
+           
                 <!---comienzo calendario-->
+                <div class="calendario-container"> <!--contenedor calendario cuerpo y encabezado-->
                 <table class="calendario">
-                    <h2 class="mes-calendario">OCTUBRE 2023</h2>
+                                        <h2 class="mes-calendario">OCTUBRE 2023</h2>
                     <tr>
 
                         <th> HORARIO:</th>
@@ -125,8 +133,7 @@
                     </tr>
                     <tr>
 
-                        <td>12
-                        <td>
+                        <td>12</td>                        
                         <td></td>
                         <td></td>
                         <td></td>
@@ -184,13 +191,13 @@
 
 
                 </table>
-
-            </div>
-            </div>
-        </section>
+            
+            </div>        
+        </div> 
+    </section>
     </main>
 
-</body>
+
 <!--Final del body-->
 <!--Principio del footer-->
 <footer>
@@ -198,7 +205,7 @@
     <p class="copyright">@ medilink 2023</p>
     <ul>
         <li>
-            <a href="https://www.facebook.com/ " target="_blank">
+            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
                 <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
                     alt="facebook-footer">
             </a>
