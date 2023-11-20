@@ -29,14 +29,14 @@ nav li {
 
 
 a {
-  color:#27325E;
+  color:#ffffff;
 }
 
 /*HOVER VISITADO*/
 a,
 a:visited {
   text-decoration: none;
-  color: #fff;
+  color: #27325E;
   
 }
 
@@ -270,6 +270,7 @@ input {
   width: 60%;
   height: 2rem;
   border: none;
+  border-radius: 0.3rem;
   margin-top: 0.5rem;
 }
 
@@ -695,71 +696,183 @@ footer li {
 }
 
 
-/*******************************NOTICIAS*************************/
+/*******************************NOTICIAS********************************/
 
 .main-noticias {
-
-  color: #ffa400;
+ height:auto;
 }
 
-/**titulo noticias****/
+/*****titulo portal medilink********/
 .noticias {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #2A4473;
   font-weight: 800;
   text-align: center;
   margin-top: 2rem;
-  text-decoration: underline;
+  margin-bottom: 3rem;
   list-style:outside;
+  
 }
 
-/*****Articulos*****/
-.bienestar {
-  background-color: #00ffff;
-  display:flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+
+
+/***********ARTICULO ALIMENTACIÓN************/
+
+.alimentacion{ 
+  display: flex;
+  justify-content:space-evenly
 }
 
-.programas {
-  background-color: #a889a8;
 
+.seccion_bienestar {
+height:45rem;
+display:flex;
+justify-content:center;
+padding-top: 3rem;
 }
 
-.educación {
-  background-color: #ffa400;
-}
-
-aside {
-  background-color: #a889a8;
-}
-
-.innovaciones {
-  background-color: #33374b;
-}
-
-.convenios {
-  background-color: #00ffff;
-}
-
-.main-noticias article {
-  height: 20rem;
-font-size: 2rem;
-}
-
-aside {
-  justify-self: right;
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.titulo_bienestar{
   color: #27325E;
-  height: 80vh;
-  width: 60%;
+  font-size: 1.6rem;
+  font-weight: 900; 
+  text-align:right; 
+  margin-right: 1rem;  
+
+}
+
+.subtitulo_bienestar{
+  font-size: 1.4rem;
+  color: #12bc8c;
+  font-weight: 900;
+  text-align:right; 
+  margin-right: 1rem; 
+margin-top: 0.1rem;
 }
 
 
+.habitos{
+  font-size: 1.1rem;
+  width: auto;
+  margin-top: 0.3rem;
+ text-align: right;
+ margin-right: 1rem;
+
+  
+ }
+
+
+.alimentacion_imagen{
+  margin-top: 0.5rem;  
+ 
+}
+
+/*****************ARTICULO SUEÑO*******************/
+
+.seccion_suenio{ 
+  height: fit-content;
+display:flex;
+justify-content:center;
+}
+
+.gestion_sueño{
+height: auto;
+display: flex;
+  justify-content: space-around;
+}
+
+
+.descanso{
+margin-top: 0.5rem;
+}
+
+
+.body_gestion{
+  display:inline-block; /*alineacion texto*/
+  justify-content: center;
+  height: fit-content;
+margin-left: 1rem;
+margin-top: 2rem;
+}
+
+
+.titulo_gestion{
+  font-weight: 900;
+  text-align:left;
+  font-size: 2.2rem;
+  margin-bottom: -0.5rem; 
+}
+
+.subtitulo_gestion{  
+  color: #ffa400;
+  font-size: 1.6rem;
+   text-align:left; 
+   margin-bottom: 0.5rem;
+   width: auto;
+   justify-content: left;
+
+}
+
+
+.texto_gestion{
+  color: #27325E;
+  font-size: 1.2rem; 
+  font-weight: 300;
+  width: auto;
+}
+
+
+/***********seccion ejercicio************/
+.ejercicio {
+ margin-top: 8rem;
+}
+
+.titulo_ejercicio{
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.articulo_ejercicio{ 
+  height:fit-content;
+}
+
+.contenedor_imagenes_ejercicio{  
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  
+}  
+
+/*IMAGENES DE SECCIÓN EJERCICIO*/
+.card_ejercicio1{ 
+width: 32%;
+overflow: hidden;
+}
+
+.card_ejercicio2{ 
+width: 32%;
+overflow: hidden;
+}
+
+.card_ejercicio3{   
+  width: 32%;
+  overflow: hidden;
+  }
+
+  .titulo_ejercicio{
+    font-size: 3rem;
+    color:#27325E;
+    margin-top: 2rem;
+  }
+
+  .texto_ejercicio_container p{   
+   font-size: 1.2rem;
+   font-weight: 400;
+   width: auto;
+   margin-top: 2rem;
+  }
 
 
 /******************************DASHBOARD****************************/
