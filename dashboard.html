@@ -19,6 +19,7 @@
     <title>dashboard</title>
 </head>
 <!--Comienzo del body-->
+
 <body>
     <!--Comienzo del header-->
     <header>
@@ -40,26 +41,28 @@
                     <a href="/noticias.html" target="_blank">Noticias</a>
                 </li>
             </ul>
-            <button id="login" type="button">Login</button>
-            <a href="login.html" target="_blank"></a>
+            <button id="login" type="button">
+                <a href="/login.html" target="_blank">Login</a></button>
 
         </nav>
     </header>
     <!--------comienzo main----------->
     <main class="main-dashboard">
-        <!--area principal del dashboard-->        
-            <div class="principial-dashboard">
-                <!--area busqueda y bienvenida-->  
-                <div class="bienvenida">
-                    <b class="texto-bienvenida">Bienvenido </b> Dr. Juan Perez!!  
-                    <div class="buscador-bienvenida">
-                        <input type="search" placeholder="Buscar paciente" id="buscador" >
-                        
-                    </div> 
-                    </div>                  
-                    
-                <section class="contenedor-dashboard">
-                <aside class="aside-dashboard">                 
+        <!--area principal del dashboard-->
+
+        <div class="principial-dashboard">
+            <!--area busqueda y bienvenida-->
+            <div class="bienvenida">
+                <b class="texto-bienvenida">Bienvenido </b> Dr. Juan Perez!!
+                <div class="buscador-bienvenida">
+                    <input type="search" placeholder="Buscar paciente" id="buscador">
+                </div>
+            </div>
+<!--contenedor principal-->
+            <section class="contenedor-dashboard">
+
+                <!--Columna izquierda------>
+                <aside class="aside-dashboard">
                     <div class="ficha-medíco">
                         <figure>
                             <img class="medico-dash" src="/assets/img/imagenes dashboard/foto-señor-cardiologo.png"
@@ -68,173 +71,188 @@
                         <p class="nombre">Juan Perez</p>
                         <p class="especialidad">Cardiólogo</p>
                     </div>
-             
-                    <div class="menu-vertical">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Calendario</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-envelope"></i> Inbox</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-file"></i> Órdenes</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-pen"></i> Escribir Post</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-file-medical"></i> Información Médica</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Comentarios</a></li>
-                            <li><a href="#">Configuraciones</a></li>
-                        </ul>
-                    </div>
-                </aside>
-           
-                <!---comienzo calendario-->
-                <div class="calendario-container"> <!--contenedor calendario cuerpo y encabezado-->
-                <table class="calendario">
-                                        <h2 class="mes-calendario">OCTUBRE 2023</h2>
-                    <tr>
-
-                        <th> HORARIO:</th>
-                        <th> LUNES </th>
-                        <th> MARTES </th>
-                        <th> MIERCOLES</th>
-                        <th> JUEVES </th>
-                        <th> VIERNES</th>
-                    </tr>
-                    <tr>
-                        <td>08</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <td>09</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>12</td>                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    </tr>
-                    <td>13</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    </tr>
-                    </tr>
-                    <td>14</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    </tr>
-                    </tr>
-                    <td>15</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    </tr>
-                    </tr>
-                    <td>16</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    </tr>
-                    </tr>
-                    <td>17</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    </tr>
-                    </tr>
-                    </p>
-
-
-                </table>
             
-            </div>        
-        </div> 
-    </section>
+            <div class="menu-vertical">
+                <ul>
+                    <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Calendario</a></li>
+                    <li><a href="#"><i class="fas fa-regular fa-envelope"></i> Inbox</a></li>
+                    <li><a href="#"><i class="fas fa-regular fa-file"></i> Órdenes</a></li>
+                    <li><a href="#"><i class="fas fa-regular fa-pen"></i> Escribir Post</a></li>
+                    <li><a href="#"><i class="fas fa-regular fa-file-medical"></i> Información Médica</a></li>
+                    <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Comentarios</a></li>
+                    <li><a href="#">Configuraciones</a></li>
+                </ul>
+            </div>
+
+            </aside>
+            <!--Calendario-->
+                <div class="principal">
+                    <div class="calendario-container"> <!--contenedor calendario cuerpo y encabezado-->
+                        <table class="calendario">
+                            <h2 class="mes-calendario">OCTUBRE 2023</h2>
+                            <tr>
+
+                                <th> HORARIO:</th>
+                                <th> LUNES </th>
+                                <th> MARTES </th>
+                                <th> MIERCOLES</th>
+                                <th> JUEVES </th>
+                                <th> VIERNES</th>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+
+
+                            <td>12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+
+                            </tr>
+                            <td>13</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+                            </tr>
+                            <td>14</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+                            </tr>
+                            <td>15</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+                            </tr>
+                            <td>16</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+                            </tr>
+                            <td>17</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            </tr>
+                            </tr>
+                            </p>
+
+
+                        </table>
+                    </div>
+                    </div>
+            </section>
+                 
+
+                <!---comienzo calendario-->
+
+
+
+       
+        </section>
+        <section class="info-medica">
+            <div class="header-info">
+                <h3 class="info">información médica</h3>
+            </div>
+        </section>
+    </div>
     </main>
+   
 
+    <!--Final del body-->
+    <!--Principio del footer-->
+    <footer>
 
-<!--Final del body-->
-<!--Principio del footer-->
-<footer>
+        <p class="copyright">@ medilink 2023</p>
+        <ul>
+            <li>
+                <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
+                    <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
+                        alt="facebook-footer">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
+                        alt="instagram-footer">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
+                    <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
+                        alt="messenger-footer">
+            </li>
+            <li>
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
+                        alt="twitter-footer">
+            </li>
+            <li>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                    <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
+                        alt="whatsapp-footer">
+            </li>
+        </ul>
 
-    <p class="copyright">@ medilink 2023</p>
-    <ul>
-        <li>
-            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
-                    alt="facebook-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
-                    alt="instagram-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
-                    alt="messenger-footer">
-        </li>
-        <li>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
-                    alt="twitter-footer">
-        </li>
-        <li>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
-                    alt="whatsapp-footer">
-        </li>
-    </ul>
-
-</footer>
-<!--Final del footer-->
+    </footer>
+    <!--Final del footer-->
 </body>
 
 </html>
