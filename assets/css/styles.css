@@ -14,7 +14,7 @@ nav {
   justify-content: space-between;
   height: 5rem;
   padding-top: 0.5em;
- 
+
 }
 
 
@@ -23,7 +23,7 @@ nav li {
   margin-top: 1.5rem;
   margin-right: 2rem;
   font-size: 1.5rem;
-  
+
 }
 
 
@@ -33,7 +33,7 @@ nav li {
 
 
 a {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 /*HOVER VISITADO*/
@@ -41,7 +41,7 @@ a,
 a:visited {
   text-decoration: none;
   color: #27325E;
-  
+
 }
 
 
@@ -60,7 +60,7 @@ h1 {
 
 .pages {
   justify-content: center;
-  
+
 }
 
 ul {
@@ -87,7 +87,7 @@ li {
 }
 
 #login:hover {
-  background-color:#27325E;
+  background-color: #27325E;
   color: #ffffff
 }
 
@@ -127,14 +127,13 @@ p {
 
 section {
   height: 30rem;
- 
+
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
-  margin:5rem;
-  
+  margin: 3rem;
 }
 
 
@@ -142,7 +141,7 @@ section {
   width: 32%;
   height: 25rem;
   margin-top: 1rem;
-  
+
 }
 
 
@@ -160,7 +159,7 @@ h2 {
 
 
 /*chamuyo marketinero*/
-.sistema {
+p {
   font-weight: bold;
   color: #33354b;
   font-size: 1.8rem;
@@ -223,7 +222,8 @@ h2 {
   border-radius: 2rem;
   font-size: 1.3rem;
   border: none;
-  position: relative; 
+  position: relative;
+
   /*posicion relativa a su contenedor*/
 }
 
@@ -409,21 +409,11 @@ h6 {
   justify-items: center;
 }
 
-.faq-container {
-  max-width: 600px;
-  margin: 50px auto;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-}
-
-
 
 .faq ul {
   width: 100%;
   display: inline-block;
- 
+  justify-content: center;
 }
 
 /*elementos de preguntas frecuentes*/
@@ -431,9 +421,8 @@ h6 {
   width: 100%;
   position: relative;
   float: none;
-  text-align:center;
-  justify-content:left;
-}*/
+  text-align: center;
+}
 
 /*fin preguntas frecuentes*/
 
@@ -476,7 +465,7 @@ b {
 /****************CONTENEDOR PRINCIPAL DE LA PÁGINA*******************/
 .main-login {
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   height: 79vh;
   top: 4rem;
 }
@@ -521,7 +510,6 @@ b {
 
 .imagen-login {
   height: 100%;
-  margin-left: 5rem;
 }
 
 .login {
@@ -529,7 +517,7 @@ b {
   display: flex;
   justify-content: right;
   background-color: #433543;
- 
+
 }
 
 p .login {
@@ -537,10 +525,10 @@ p .login {
 
 }
 
-.olvidaste{
+.olvidaste {
   font-size: 1.2rem;
   line-height: 2.5rem;
-  
+
 }
 
 
@@ -579,7 +567,7 @@ p .login {
   color: #ffffff;
   font-size: 3rem;
   text-align: center;
-  
+
 }
 
 .form-register p {
@@ -594,7 +582,7 @@ p .login {
 }
 
 .form-register a:hover {
-  color:#ffa400;
+  color: #ffa400;
   text-decoration: underline;
 }
 
@@ -608,14 +596,14 @@ p .login {
   width: 50rem;
 }
 
-main .registrado{
+main .registrado {
   font-size: 1.2rem;
 }
 
 
 /***************footer todas las páginas*******************/
 footer {
-  background-color: #33374b;
+  background-color: #27325E;
   width: 100%;
   height: 8rem;
   padding-top: 1rem;
@@ -731,7 +719,7 @@ footer li {
 /*******************************NOTICIAS********************************/
 
 .main-noticias {
- height:auto;
+  height: auto;
 }
 
 /*****titulo portal medilink********/
@@ -742,112 +730,114 @@ footer li {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  list-style:outside;
-  
+  list-style: outside;
+
 }
 
 
 
 /***********ARTICULO ALIMENTACIÓN************/
 
-.alimentacion{ 
+.alimentacion {
   display: flex;
-  justify-content:space-evenly
+  justify-content: space-evenly
 }
 
 
 .seccion_bienestar {
-height:45rem;
-display:flex;
-justify-content:center;
-padding-top: 3rem;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 }
 
-.titulo_bienestar{
+.titulo_bienestar {
   color: #27325E;
   font-size: 1.6rem;
-  font-weight: 900; 
-  text-align:right; 
-  margin-right: 1rem;  
+  font-weight: 900;
+  text-align: right;
+  margin-right: 1rem;
 
 }
 
-.subtitulo_bienestar{
+.subtitulo_bienestar {
   font-size: 1.4rem;
   color: #12bc8c;
   font-weight: 900;
-  text-align:right; 
-  margin-right: 1rem; 
-margin-top: 0.1rem;
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 0.1rem;
 }
 
 
-.habitos{
-  font-size: 1.3rem;
+.habitos {
+  font-size: 1.2rem;
+  font-weight: 100;
   width: auto;
   margin-top: 0.3rem;
- text-align: right;
- margin-right: 1rem;
-font-weight: 100;
-  
- }
+  text-align: right;
+  margin-right: 1rem;
 
 
-.alimentacion_imagen{
-  margin-top: 0.5rem;  
- 
+}
+
+
+.alimentacion_imagen {
+  margin-top: 0.5rem;
+
 }
 
 /*****************ARTICULO SUEÑO*******************/
 
-.seccion_suenio{ 
+.seccion_suenio {
   height: fit-content;
-display:flex;
-justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
-.gestion_sueño{
-height: auto;
-display: flex;
+.gestion_sueño {
+  height: auto;
+  display: flex;
   justify-content: space-around;
 }
 
 
-.descanso{
-margin-top: 0.5rem;
+.descanso {
+  margin-top: 0.5rem;
 }
 
 
-.body_gestion{
-  display:inline-block; /*alineacion texto*/
+.body_gestion {
+  display: inline-block;
+  /*alineacion texto*/
   justify-content: center;
   height: fit-content;
-margin-left: 1rem;
-margin-top: 2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 
-.titulo_gestion{
+.titulo_gestion {
   font-weight: 900;
-  text-align:left;
+  text-align: left;
   font-size: 2.2rem;
-  margin-bottom: -0.5rem; 
+  margin-bottom: -0.5rem;
 }
 
-.subtitulo_gestion{  
+.subtitulo_gestion {
   color: #ffa400;
   font-size: 1.6rem;
-   text-align:left; 
-   margin-bottom: 0.5rem;
-   width: auto;
-   justify-content: left;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  width: auto;
+  justify-content: left;
 
 }
 
 
-.texto_gestion{
+.texto_gestion {
   color: #27325E;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: 300;
   width: auto;
 }
@@ -855,10 +845,10 @@ margin-top: 2rem;
 
 /***********seccion ejercicio************/
 .ejercicio {
- margin-top: 8rem;
+  margin-top: 8rem;
 }
 
-.titulo_ejercicio{
+.titulo_ejercicio {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
@@ -866,45 +856,45 @@ margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-.articulo_ejercicio{ 
-  height:fit-content;
+.articulo_ejercicio {
+  height: fit-content;
 }
 
-.contenedor_imagenes_ejercicio{  
+.contenedor_imagenes_ejercicio {
   width: 100%;
   display: flex;
-  justify-content:space-between;
-  
-}  
+  justify-content: space-between;
+
+}
 
 /*IMAGENES DE SECCIÓN EJERCICIO*/
-.card_ejercicio1{ 
-width: 32%;
-overflow: hidden;
-}
-
-.card_ejercicio2{ 
-width: 32%;
-overflow: hidden;
-}
-
-.card_ejercicio3{   
+.card_ejercicio1 {
   width: 32%;
   overflow: hidden;
-  }
+}
 
-  .titulo_ejercicio{
-    font-size: 3rem;
-    color:#27325E;
-    margin-top: 2rem;
-  }
+.card_ejercicio2 {
+  width: 32%;
+  overflow: hidden;
+}
 
-  .texto_ejercicio_container p{   
-   font-size: 1.2rem;
-   font-weight: 400;
-   width: auto;
-   margin-top: 2rem;
-  }
+.card_ejercicio3 {
+  width: 32%;
+  overflow: hidden;
+}
+
+.titulo_ejercicio {
+  font-size: 3rem;
+  color: #27325E;
+  margin-top: 2rem;
+}
+
+.texto_ejercicio_container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: auto;
+  margin-top: 2rem;
+}
 
 
 /******************************DASHBOARD****************************/
@@ -918,13 +908,16 @@ overflow: hidden;
 
 .contenedor-dasboard {
   height: 100vh;
- display: flex; 
-
+  display: flex;
+  width: 100%;
 }
 
 
 .principal-dashboard {
-  width: 100%;
+  display: grid;
+  /*alineacion vertical*/
+  place-items: center;
+  /*coloca items en el centro*/
   height: 100%;
   position: relative;
 }
@@ -949,21 +942,21 @@ overflow: hidden;
 }
 
 .aside-dashboard {
-  width: 25%;
+  width: 21%;
   height: 100vh;
-  background-color:#27325E; 
-  margin-left: -5rem;
-    float: left; 
+  background-color: #27325E;
+  float: left;
   text-align: center;
-  
+
 }
 
 .menu-vertical {
   color: #ffff;
-  font-size: 1.5rem;
-  font-weight: 500; 
-  height: 70vh;
-  width: 100%;   
+  background-color: #27325E;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 80vh;
+  width: 100%;
   margin-top: 2rem;
   text-align: center;
 }
@@ -973,13 +966,14 @@ overflow: hidden;
   height: auto;
   display: inline-block;
   justify-content: center;
+  line-height: 4rem;
 }
 
-.menu-vertical a{
+.menu-vertical a {
   color: #ffff;
 }
 
-.menu-vertical a:hover{
+.menu-vertical a:hover {
   color: #ffa400;
 }
 
@@ -988,12 +982,12 @@ overflow: hidden;
   height: fit-content;
   width: 100%;
   font-size: 1.3rem;
-  justify-content:left;
+  justify-content: left;
 }
 
 
 .medico-dash {
-  width: 60%;  
+  width: 60%;
   margin: 0 auto;
   height: auto;
 }
@@ -1011,7 +1005,7 @@ overflow: hidden;
   margin: 0 auto;
 }
 
-.especialidad:hover{
+.especialidad:hover {
   color: #ffa400;
 }
 
@@ -1047,20 +1041,24 @@ overflow: hidden;
   width: 100%;
   height: 50%;
   position: relative;
- 
+
 }
 
 /*****************contenedor general del calendario***********************/
-.calendario {  
+.calendario {
   margin: 0 right;
   height: 50%;
   position: relative;
+
 }
 
 /******contenedor superior calendario******/
 .mes-calendario {
-
-  margin-top: 3rem;
+  display: grid;
+  /*para alinear verticalmente*/
+  place-items: center;
+  /*para alinear verticalmente*/
+  margin-top: 3.7rem;
   font-size: 3rem;
   text-align: center;
   margin: 0 auto;
@@ -1070,7 +1068,9 @@ overflow: hidden;
   width: 99.5%;
   height: 5rem;
   color: #e9e6df;
-  margin-right: 2rem;
+  margin-right: 2rem; 
+  color: #27325E;
+  font-weight: 600;
 }
 
 
@@ -1127,23 +1127,73 @@ table {
   font-weight: 900;
 }
 
-.principal{
-  width: 76%;
-  background-color: #ffa400;
+.principal {
+  width: 79%;
   float: left;
- 
+
 }
 
-.info-medica{
-  background-color: #1e7dd1;
-  width:55%;
+/*Fichas pacientes contenedor principal*/
+
+.info {
+   font-size: 3rem;
+  color: #27325E;
+  font-weight: 600;
 }
 
+.info-medica {
 
+  width: 100%;
+  position: relative;
+  height: auto;
 
-.info{
+}
+
+.header-info {
   background-color: #1FBE92;
-  color:#2A4473; 
-  width: 60%;
+  height: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: #fff;
   text-align: center;
 }
+
+.cards-pacientes {
+  position: relative;
+  /*propiedades relativas al contenedor padre*/
+  width: 100%;
+  margin: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-pacientes li {
+  display: flex;
+  position: relative;
+  width: 33%;
+  height: 8rem;
+  float: left;
+  justify-content: center;
+  box-shadow: 1px solid #1a181a;
+}
+
+.cards-pacientes p {
+  text-align: left;
+}
+
+
+
+ .nombre-paciente{
+  color: #ffa400;
+  font-size: 0.4 rem;
+  }
+
+  .mail{
+    color: #27325E;
+    font-size: 1rem;
+  }
+
+  .telefono{
+    color: #27325E;
+    font-size: 1rem;
+  }
