@@ -14,7 +14,6 @@ nav {
   justify-content: space-between;
   height: 5rem;
   padding-top: 0.5em;
-
 }
 
 
@@ -23,25 +22,21 @@ nav li {
   margin-top: 1.5rem;
   margin-right: 2rem;
   font-size: 1.5rem;
-
 }
 
 
 
 /************ETIQUETA a CON HOVER *****************/
 
-
-
-a {
-  color: #ffffff;
+a{
+  display: block;
 }
+
 
 /*HOVER VISITADO*/
 a,
 a:visited {
   text-decoration: none;
-  color: #27325E;
-
 }
 
 
@@ -60,6 +55,7 @@ h1 {
 
 .pages {
   justify-content: center;
+  color:#33354b
 
 }
 
@@ -91,6 +87,10 @@ li {
   color: #ffffff
 }
 
+.login_principal{
+color: #ffff;
+}
+
 /************BOTÓN FORMULARIO************/
 button {
   width: 10rem;
@@ -102,11 +102,15 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: #27325E;
+  color: #ffffff
+}
 
 /******************PARA QUE TOME TODA EL AREA DEL BOTÓN************************/
 button a {
   display: block;
-  position: relative;
+  position: relative; 
 }
 
 
@@ -127,7 +131,6 @@ p {
 
 section {
   height: 30rem;
-
 }
 
 .banner {
@@ -141,7 +144,6 @@ section {
   width: 32%;
   height: 25rem;
   margin-top: 1rem;
-
 }
 
 
@@ -176,6 +178,7 @@ p {
   line-height: 1rem;
   margin-left: 1rem;
 }
+
 
 /********IMAGEN BANNER**********/
 .medico {
@@ -221,11 +224,19 @@ p {
   height: 2.5rem;
   border-radius: 2rem;
   font-size: 1.3rem;
+  display: block;
   border: none;
   position: relative;
+  color:#FFFFFF;
+  background-color: #ffa400;
+}
+
+.boton2:hover{
+  background-color:#27325E;
+}
 
   /*posicion relativa a su contenedor*/
-}
+
 
 /*botón ancla al formulario*/
 .registro {
@@ -272,7 +283,7 @@ label {
 
 input {
   text-align: center;
-  width: 60%;
+  width: 80%;
   height: 2rem;
   border: none;
   border-radius: 0.3rem;
@@ -347,7 +358,7 @@ h4 {
 
 /*FOTO MÉDICO*/
 .foto-medico {
-  width: 15%;
+  width: 20%;
 }
 
 /*contiene a la ilustracion principal mas las fotos de los médicos*/
@@ -413,15 +424,16 @@ h6 {
 .faq ul {
   width: 100%;
   display: inline-block;
-  justify-content: center;
+  justify-content:left;
+
 }
 
 /*elementos de preguntas frecuentes*/
-.faq ul li {
-  width: 100%;
+.faq ul li { 
   position: relative;
   float: none;
-  text-align: center;
+  text-align: center; 
+  justify-items: left;
 }
 
 /*fin preguntas frecuentes*/
@@ -955,7 +967,7 @@ footer li {
   background-color: #27325E;
   font-size: 1.6rem;
   font-weight: 500;
-  height: 80vh;
+  height:85%;
   width: 100%;
   margin-top: 2rem;
   text-align: center;
@@ -1048,8 +1060,8 @@ footer li {
 .calendario {
   margin: 0 right;
   height: 50%;
-  position: relative;
-
+  width: 100%;
+  position: relative; 
 }
 
 /******contenedor superior calendario******/
@@ -1079,45 +1091,93 @@ footer li {
 table {
   margin-top: 3rem;
   width: 100%;
-  height: auto;
-  align-self: center;
+  height: auto;  
   margin: 0 auto;
+
 }
 
 
-
-th {
-  border-color: #2A4473;
-  border-width: 1px;
-  border-style: inset;
-}
-
+/*etiqueta td para crear celdas*/
 td {
   border-color: #1a181a;
-  border-width: 0.5px;
-  border-style: inset;
+  border-width:0.031rem;
+  border-style: inset; /*borde intercalado*/
+ 
 }
 
 /*celdas*/
 th {
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.125rem;
   background: #1FBE92;
-  max-width: 500px;
+  max-width: 31.25rem;
+  border-color: #2A4473;
+  border-width: 0.063rem;
+  border-style: inset;/*borde intercalado*/
+ 
 }
 
 tr {
-  width: 100px;
-  height: 50px;
+  width:6.25rem;
+  height: 3.125rem;
   background: #ede8e8;
-  max-width: 500px;
+  max-width: 31.25rem;
+}
+
+.paciente_agendado{
+  background-color: #059630;
+  color:#ffff;
+  height: 70%;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  display: grid; /*display grid + place items sirve para alinear contenido dentro de la celda*/
+  place-items: center;
+  
+}
+
+.paciente_cancelado{
+  background-color: #fa2d2d;
+  color:#ffff;
+  height: 70%;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  display: grid; /*display grid + place items sirve para alinear contenido dentro de la celda*/
+  place-items: center;
+}
+
+.paciente_cursando{
+  background-color:#ffa400;
+  color:#ffff;
+  height: 70%;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  display: grid; /*display grid + place items sirve para alinear contenido dentro de la celda*/
+  place-items: center;
+}
+
+.paciente_finalizado{
+  background-color: #051986;
+  color:#ffff;
+  height: 70%;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  display: grid; /*display grid + place items sirve para alinear contenido dentro de la celda*/
+  place-items: center;
 }
 
 /*****RELLENO CELDAS******/
-h1 {
-  text-align: center;
+h1 {  
   color: #2A4473;
   font-weight: 900;
+  margin-left: 0.8rem;
 }
 
 table {
@@ -1197,3 +1257,114 @@ table {
     color: #27325E;
     font-size: 1rem;
   }
+
+  /**************************MODALES******************************/
+
+
+  .historial{
+    background-color: #bdb1b1;
+    height: auto;
+    width:35%;
+    height: 60%;
+    margin: 5rem;   
+    z-index: 9999;
+    position:relative;
+   
+  }
+
+
+  .boton-modal{
+    background-color: #ffff;
+    padding:0.9rem;
+  
+  }
+
+  .btn-modal{
+    background-color: #059630;
+    padding: 1rem;
+  }
+
+  .encabezado-modal{
+    background-color: #27325E;
+    font-size: 2rem;   
+  }
+
+  .historial h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .paciente-modal{
+    font-size:1.3rem;
+    color:#ffff;
+    text-align: center;
+  }
+
+  .ul-modal{
+    margin-left: 2rem;
+      list-style:none;
+    display: inline-block;
+    color: #12bc8c;
+  }
+
+.ficha-paciente{
+  width: 70%;
+  margin-left: 3rem;
+}
+
+.datos-paciente-dash{
+  background-color:#27325E; 
+  display: flex;
+align-items: center;
+justify-content: center;
+padding-top:1rem;
+padding-bottom:1rem;
+}
+ 
+.info-paciente{ 
+ display: grid;
+ /*alineacion vertical*/
+ place-items: center;
+ /*coloca items en el centro*/
+ width: 100%;
+ margin-right: 3rem;
+}
+
+.modal{
+  width: 100%;
+  height: 100%;  
+  position:fixed;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left:0;
+  background-color: #bdb1b184;
+  z-index:998;
+}
+
+/*> selector hijo directo (más proximo
+.historial > i{
+position:absolute;
+left:0;
+top:0;
+font-size: 2rem;
+}*/
+
+/*> selector de elemento hermano (dos elementos al mismo nivel)*/
+#btn-modal:checked~.modal{
+ display:flex; 
+
+}
+
+#btn-modal{
+  display: none;
+ 
+}
+
+.modal > label{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}

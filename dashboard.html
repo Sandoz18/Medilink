@@ -42,18 +42,66 @@
                 </li>
             </ul>
             <button id="login" type="button">
-                <a href="/login.html" target="_blank">Login</a></button>
-
+                <a class="login_principal" href="login.html" target="_blank">Login</a>
+            </button>
         </nav>
     </header>
     <!--------comienzo main----------->
+      <!--MODAL INFO MÉDICA-->
+                            <!--botón modal-->
+                            <input type="checkbox" id="btn-modal">   
+                            <div class="modal">
+                                <label for="btn-modal"></label>
+                            <section class="historial">
+                                <i class="fa-solid fa-xmark"></i>
+                                <div class="contenedor-modal">
+                            <div class="boton-modal">
+                                <label for="btn-modal">
+                                  
+                                </label>
+                            </div>
+                            <!--fin botón modal-->
+                            <!--el input es para manejar el boton modal y el id para darle estilo-->
+                                                   
+                                <div class="contenido-modal">
+                                    <div class="encabezado-modal">
+                                        <div class="datos-paciente-dash">
+                                            <figure>
+                                                <img class="ficha-paciente" src="/assets/img/imagenes dashboard/ficha-paciente-01.png"
+                                                alt="ficha">
+                                            </figure>
+                                            <div class="info-paciente">
+                                    <h2>INFORMACIÓN MÉDICA</h2>                                                              
+                                        <P class="paciente-modal">Paciente Pablo Paez <br> Historia Clinica 547866</P>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                        <ul class="ul-modal">
+                                            <li>Condiciones médicas</li>
+                                            <li>Alergías</li>
+                                            <li>Farmacia</li>
+                                            <li>Historial Cirugias</li>
+                                            <li>Historial Familiar</li>
+                                            <li>Información Personal</li>
+                                        </ul>
+                                    
+                            <div class="btn-cerrar">
+                                <label for="btn-modal">
+                                  
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
     <main class="main-dashboard">
+
         <!--area principal del dashboard-->
 
         <div class="principial-dashboard">
             <!--area busqueda y bienvenida-->
             <div class="bienvenida">
-                <b class="texto-bienvenida">Bienvenido </b> Dr. Juan Perez!!
+                <b class="texto-bienvenida">Bienvenido </b> Dr. Juán Perez!!
                 <div class="buscador-bienvenida">
                     <input type="search" placeholder="Buscar paciente" id="buscador">
                 </div>
@@ -61,14 +109,14 @@
             <!--contenedor principal-->
             <section class="contenedor-dashboard">
 
-                <!--Columna izquierda------>
+                <!--Columna izquierda sidebar------>
                 <aside class="aside-dashboard">
                     <div class="ficha-medíco">
                         <figure>
                             <img class="medico-dash" src="/assets/img/imagenes dashboard/foto-señor-cardiologo.png"
                                 alt="foto-portada-medilink">
                         </figure>
-                        <p class="nombre">Juan Perez</p>
+                        <p class="nombre">Juán Perez</p>
                         <p class="especialidad">Cardiólogo</p>
                     </div>
 
@@ -78,7 +126,9 @@
                             <li><a href="#"><i class="fas fa-regular fa-envelope"></i> Inbox</a></li>
                             <li><a href="#"><i class="fas fa-regular fa-file"></i> Órdenes</a></li>
                             <li><a href="#"><i class="fas fa-regular fa-pen"></i> Escribir Post</a></li>
-                            <li><a href="#"><i class="fas fa-regular fa-file-medical"></i> Información Médica</a></li>
+                            <li><label for="btn-modal" ><i class="fas fa-regular fa-file-medical"></i> Información Médica</label> 
+
+                            </li>
                             <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Comentarios</a></li>
                             <li><a href="#"> Configuracion</a></li>
                         </ul>
@@ -90,8 +140,9 @@
                     <div class="calendario-container"> <!--contenedor calendario cuerpo y encabezado-->
                         <table class="calendario">
                             <h2 class="mes-calendario"> NOVIEMBRE 2023 </h2>
+                            <!--etiqueta tr para crear filas-->
                             <tr>
-
+                                <!-- th celdas de encabezados-->
                                 <th> HORARIO:</th>
                                 <th> LUNES </th>
                                 <th> MARTES </th>
@@ -100,8 +151,9 @@
                                 <th> VIERNES</th>
                             </tr>
                             <tr>
+                                <!--etiqueta td para crear celdas-->
                                 <td>08:00</td>
-                                <td></td>
+                                <td><div class="paciente_finalizado">Irene</div></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -112,7 +164,7 @@
                                 <td>09:00</td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td><div class="paciente_cursando">Agustina</div></td>
                                 <td></td>
                                 <td></td>
 
@@ -131,7 +183,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td><div class="paciente_cancelado">Julian</div></td>
                                 <td></td>
 
                             </tr>
@@ -151,7 +203,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td><div class="paciente_agendado">Mariela</div></td>
                             <td></td>
 
                             </tr>
@@ -168,7 +220,7 @@
                             <td>15:00</td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td><div class="paciente_agendado">Alejandro</div></td>
                             <td></td>
                             <td></td>
 
@@ -209,10 +261,10 @@
                                     </figure>
                                     <div class="datos">
                                         <p class="nombre-paciente">
-                                            Lalo Landa
+                                         Daniela Medina
                                         </p>
                                         <p class="mail">
-                                           Lalolanda@paciente.com
+                                           Danielamedina@paciente.com
                                         </p>
                                         <p class="telefono">
                                             1180808080
@@ -225,10 +277,10 @@
                                     </figure>
                                     <div class="datos">
                                         <p class="nombre-paciente">
-                                            Lalo Landa
+                                          Alejandro Diaz
                                         </p>
                                         <p class="mail">
-                                           Lalolanda@paciente.com
+                                           Alejandrodiaz@paciente.com
                                         </p>
                                         <p class="telefono">
                                             1180808080
@@ -261,10 +313,10 @@
                                     </figure>
                                     <div class="datos">
                                         <p class="nombre-paciente">
-                                            Lalo Landa
+                                           Marcela Muñoz
                                         </p>
                                         <p class="mail">
-                                           Lalolanda@paciente.com
+                                           Marcelamuñoz@paciente.com
                                         </p>
                                         <p class="telefono">
                                             1180808080
@@ -277,10 +329,10 @@
                                     </figure>
                                     <div class="datos">
                                         <p class="nombre-paciente">
-                                            Lalo Landa
+                                            Carmen Ruiz
                                         </p>
                                         <p class="mail">
-                                           Lalolanda@paciente.com
+                                           Carmenruiz@paciente.com
                                         </p>
                                         <p class="telefono">
                                             1180808080
@@ -293,10 +345,10 @@
                                     </figure>
                                     <div class="datos">
                                         <p class="nombre-paciente">
-                                            Lalo Landa
+                                           Emilia Mitre
                                         </p>
                                         <p class="mail">
-                                           Lalolanda@paciente.com
+                                           Emiliamitre@paciente.com
                                         </p>
                                         <p class="telefono">
                                             1180808080
@@ -341,21 +393,25 @@
                 <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
                     <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
                         alt="messenger-footer">
+                    </a>
             </li>
             <li>
                 <a href="https://twitter.com/?lang=es" target="_blank">
                     <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
                         alt="twitter-footer">
+                    </a>
             </li>
             <li>
                 <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
                     <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
-                        alt="whatsapp-footer">
+                        alt="whatsapp-footer"></a>
             </li>
         </ul>
 
     </footer>
     <!--Final del footer-->
+   
 </body>
-
+ 
+                            
 </html>
