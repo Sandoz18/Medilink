@@ -8,13 +8,6 @@
 
 
 
-/****NAVBAR***/
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  padding-top: 0.5em;
-}
 
 
 /*********NAVBAR ELEMENTOS *****/
@@ -30,6 +23,7 @@ nav li {
 
 a{
   display: block;
+  text-decoration: none;
 }
 
 
@@ -39,18 +33,10 @@ a:visited {
   text-decoration: none;
 }
 
+.login_principal{
+  text-decoration: none;
+  text-align: center;
 
-
-/********ENCABEZADO PRINCIPAL********/
-
-h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #27325E;
-  margin-top: 1rem;
-  font-weight: bold;
-  line-height: 3rem;
-  text-align: left;
 }
 
 .pages {
@@ -77,9 +63,10 @@ li {
 /**********************BOTÓN DEL LOGIN******************************/
 #login {
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
   background-color: #ffa400;
   color: #ffffff;
-  margin-right: 5rem;
+  margin-right: 1rem;
 }
 
 #login:hover {
@@ -125,7 +112,7 @@ p {
 .logo {
   width: 13rem;
   margin-top: 1rem;
-  margin-left: 6rem;
+
 }
 
 
@@ -146,18 +133,18 @@ section {
   margin-top: 1rem;
 }
 
-
+/*
 h2 {
   text-align: left;
   margin-left: 1rem;
   margin-top: 0.2rem;
   width: 100%;
-  /*el ancho que ocupa es el 100% del contenedor h2*/
+  /*el ancho que ocupa es el 100% del contenedor h2
   color: #ffa400;
   font-weight: 200;
   font-size: 2.3rem;
   line-height: 2.5rem;
-}
+}*/
 
 
 /*chamuyo marketinero*/
@@ -196,7 +183,7 @@ p {
   height: auto;
   margin-left: 5rem;
   margin-top: 1rem;
-  box-shadow: 0, 0, 40px, -10px;
+   box-shadow: 0, 0, 40px, -10px;
   border-color: #33354b;
   box-shadow: 5px 7px 10px #a889a8;
   text-shadow: #433543;
@@ -210,6 +197,9 @@ p {
   font-weight: 900;
 }
 
+
+/*BOTÓN DEL FORMULARIO DE REGISTRO QUE CAMBIÉ PARA QUE QUEDE IGUAl.
+
 .submit {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -217,6 +207,19 @@ p {
   width: 12rem;
   justify-content: center;
 }
+
+.submit:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.submit:visited {
+  text-decoration: none;
+  background-color: #33354b;
+  color: #ffffff
+}
+
+*/
 
 .boton2 {
   top: 1rem;
@@ -230,6 +233,8 @@ p {
   color:#FFFFFF;
   background-color: #ffa400;
 }
+
+
 
 .boton2:hover{
   background-color:#27325E;
@@ -248,21 +253,10 @@ p {
   margin-bottom: 3rem;
   border-radius: 2rem;
   font-size: 1.3rem;
-  color: #ffffff;
-  background-color: #ffa400;
+  color: #ffffff; 
   border: none;
 }
 
-.submit:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.submit:visited {
-  text-decoration: none;
-  background-color: #33354b;
-  color: #ffffff
-}
 
 a:hover {
   color: #ffa400;
@@ -305,7 +299,7 @@ fieldset {
 
 /***********sección 3 pasos*************/
 .analizando {
-  background-color: #5296e7;
+  background-color: #0a4c9e;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
@@ -356,10 +350,6 @@ h4 {
   width: auto;
 }
 
-/*FOTO MÉDICO*/
-.foto-medico {
-  width: 20%;
-}
 
 /*contiene a la ilustracion principal mas las fotos de los médicos*/
 .medico {
@@ -1176,8 +1166,7 @@ tr {
 /*****RELLENO CELDAS******/
 h1 {  
   color: #2A4473;
-  font-weight: 900;
-  margin-left: 0.8rem;
+ 
 }
 
 table {

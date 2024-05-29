@@ -29,71 +29,71 @@
                     alt="logo-medilink"></a>
             <ul class="pages">
                 <li>
-                    <a href="/index.html" target="_blank">Inicio </a>
+                    <a href="/index.html" target="_parent">Inicio </a>
                 </li>
                 <li>
-                    <a href="/quienes_somos.html" target="_blank">Quienes somos </a>
+                    <a href="/quienes_somos.html" target="_parent">Quienes somos </a>
                 </li>
                 <li>
-                    <a href="/servicios.html" target="_blank">Servicios </a>
+                    <a href="/servicios.html" target="_parent">Servicios </a>
                 </li>
                 <li>
-                    <a href="/noticias.html" target="_blank">Noticias</a>
+                    <a href="/noticias.html" target="_parent">Noticias</a>
                 </li>
             </ul>
             <button id="login" type="button">
-                <a class="login_principal" href="login.html" target="_blank">Login</a>
+                <a class="login_principal" href="login.html" target="_parent">Login</a>
             </button>
         </nav>
     </header>
     <!--------comienzo main----------->
-      <!--MODAL INFO MÉDICA-->
-                            <!--botón modal-->
-                            <input type="checkbox" id="btn-modal">   
-                            <div class="modal">
-                                <label for="btn-modal"></label>
-                            <section class="historial">
-                                <i class="fa-solid fa-xmark"></i>
-                                <div class="contenedor-modal">
-                            <div class="boton-modal">
-                                <label for="btn-modal">
-                                  
-                                </label>
-                            </div>
-                            <!--fin botón modal-->
-                            <!--el input es para manejar el boton modal y el id para darle estilo-->
-                                                   
-                                <div class="contenido-modal">
-                                    <div class="encabezado-modal">
-                                        <div class="datos-paciente-dash">
-                                            <figure>
-                                                <img class="ficha-paciente" src="/assets/img/imagenes dashboard/ficha-paciente-01.png"
-                                                alt="ficha">
-                                            </figure>
-                                            <div class="info-paciente">
-                                    <h2>INFORMACIÓN MÉDICA</h2>                                                              
-                                        <P class="paciente-modal">Paciente Pablo Paez <br> Historia Clinica 547866</P>                                       
-                                        </div>
-                                    </div>
-                                </div>
-                                        <ul class="ul-modal">
-                                            <li>Condiciones médicas</li>
-                                            <li>Alergías</li>
-                                            <li>Farmacia</li>
-                                            <li>Historial Cirugias</li>
-                                            <li>Historial Familiar</li>
-                                            <li>Información Personal</li>
-                                        </ul>
-                                    
-                            <div class="btn-cerrar">
-                                <label for="btn-modal">
-                                  
-                                </label>
+    <!--MODAL INFO MÉDICA-->
+    <!--botón modal-->
+    <input type="checkbox" id="btn-modal">
+    <div class="modal">
+        <label for="btn-modal"></label>
+        <section class="historial">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="contenedor-modal">
+                <div class="boton-modal">
+                    <label for="btn-modal">
+
+                    </label>
+                </div>
+                <!--fin botón modal-->
+                <!--el input es para manejar el boton modal y el id para darle estilo-->
+
+                <div class="contenido-modal">
+                    <div class="encabezado-modal">
+                        <div class="datos-paciente-dash">
+                            <figure>
+                                <img class="ficha-paciente" src="/assets/img/imagenes dashboard/ficha-paciente-01.png"
+                                    alt="ficha">
+                            </figure>
+                            <div class="info-paciente">
+                                <h2>INFORMACIÓN MÉDICA</h2>
+                                <p class="paciente-modal">Paciente Pablo Paez <br> Historia Clinica 547866</p>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <ul class="ul-modal">
+                        <li>Condiciones médicas</li>
+                        <li>Alergías</li>
+                        <li>Farmacia</li>
+                        <li>Historial Cirugias</li>
+                        <li>Historial Familiar</li>
+                        <li>Información Personal</li>
+                    </ul>
+
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">
+
+                        </label>
+                    </div>
+                </div>
             </div>
+        </section>
+    </div>
     <main class="main-dashboard">
 
         <!--area principal del dashboard-->
@@ -126,7 +126,8 @@
                             <li><a href="#"><i class="fas fa-regular fa-envelope"></i> Inbox</a></li>
                             <li><a href="#"><i class="fas fa-regular fa-file"></i> Órdenes</a></li>
                             <li><a href="#"><i class="fas fa-regular fa-pen"></i> Escribir Post</a></li>
-                            <li><label for="btn-modal" ><i class="fas fa-regular fa-file-medical"></i> Información Médica</label> 
+                            <li><label for="btn-modal"><i class="fas fa-regular fa-file-medical"></i> Información
+                                    Médica</label>
 
                             </li>
                             <li><a href="#"><i class="fas fa-regular fa-calendar-check"></i> Comentarios</a></li>
@@ -153,7 +154,9 @@
                             <tr>
                                 <!--etiqueta td para crear celdas-->
                                 <td>08:00</td>
-                                <td><div class="paciente_finalizado">Irene</div></td>
+                                <td>
+                                    <div class="paciente_finalizado">Irene</div>
+                                </td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -164,7 +167,9 @@
                                 <td>09:00</td>
                                 <td></td>
                                 <td></td>
-                                <td><div class="paciente_cursando">Agustina</div></td>
+                                <td>
+                                    <div class="paciente_cursando">Agustina</div>
+                                </td>
                                 <td></td>
                                 <td></td>
 
@@ -183,7 +188,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><div class="paciente_cancelado">Julian</div></td>
+                                <td>
+                                    <div class="paciente_cancelado">Julian</div>
+                                </td>
                                 <td></td>
 
                             </tr>
@@ -203,7 +210,9 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><div class="paciente_agendado">Mariela</div></td>
+                            <td>
+                                <div class="paciente_agendado">Mariela</div>
+                            </td>
                             <td></td>
 
                             </tr>
@@ -220,7 +229,9 @@
                             <td>15:00</td>
                             <td></td>
                             <td></td>
-                            <td><div class="paciente_agendado">Alejandro</div></td>
+                            <td>
+                                <div class="paciente_agendado">Alejandro</div>
+                            </td>
                             <td></td>
                             <td></td>
 
@@ -248,123 +259,123 @@
 
 
                         </table>
-                    
-                    </div>
-                        <div class="info-medica">
-                            <div class="header-info">
-                                <h3 class="info">PACIENTES HOY</h3>
-                            </div>
-                            <ul class="cards-pacientes">
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-01.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                         Daniela Medina
-                                        </p>
-                                        <p class="mail">
-                                           Danielamedina@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-02.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                          Alejandro Diaz
-                                        </p>
-                                        <p class="mail">
-                                           Alejandrodiaz@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-03.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                            Lalo Landa
-                                        </p>
-                                        <p class="mail">
-                                           Lalolanda@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                 
-                               
-                            </ul>
-                            <ul class="cards-pacientes">
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-04.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                           Marcela Muñoz
-                                        </p>
-                                        <p class="mail">
-                                           Marcelamuñoz@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-05.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                            Carmen Ruiz
-                                        </p>
-                                        <p class="mail">
-                                           Carmenruiz@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="assets/img/imagenes dashboard/paciente1-06.png">
-                                    </figure>
-                                    <div class="datos">
-                                        <p class="nombre-paciente">
-                                           Emilia Mitre
-                                        </p>
-                                        <p class="mail">
-                                           Emiliamitre@paciente.com
-                                        </p>
-                                        <p class="telefono">
-                                            1180808080
-                                        </p>
-                                    </div>
-                                </li>
-                 
-                               
-                            </ul>
 
+                    </div>
+                    <div class="info-medica">
+                        <div class="header-info">
+                            <h3 class="info">PACIENTES HOY</h3>
                         </div>
+                        <ul class="cards-pacientes">
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-01.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Daniela Medina
+                                    </p>
+                                    <p class="mail">
+                                        Danielamedina@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-02.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Alejandro Diaz
+                                    </p>
+                                    <p class="mail">
+                                        Alejandrodiaz@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-03.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Lalo Landa
+                                    </p>
+                                    <p class="mail">
+                                        Lalolanda@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
 
-                    
+
+                        </ul>
+                        <ul class="cards-pacientes">
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-04.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Marcela Muñoz
+                                    </p>
+                                    <p class="mail">
+                                        Marcelamuñoz@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-05.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Carmen Ruiz
+                                    </p>
+                                    <p class="mail">
+                                        Carmenruiz@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="assets/img/imagenes dashboard/paciente1-06.png">
+                                </figure>
+                                <div class="datos">
+                                    <p class="nombre-paciente">
+                                        Emilia Mitre
+                                    </p>
+                                    <p class="mail">
+                                        Emiliamitre@paciente.com
+                                    </p>
+                                    <p class="telefono">
+                                        1180808080
+                                    </p>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
                     </div>
 
-                    <!--cierre de la section contenedor dashboard-->
+
+                </div>
+
+                <!--cierre de la section contenedor dashboard-->
             </section>
 
         </div>
@@ -393,13 +404,13 @@
                 <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
                     <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
                         alt="messenger-footer">
-                    </a>
+                </a>
             </li>
             <li>
                 <a href="https://twitter.com/?lang=es" target="_blank">
                     <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
                         alt="twitter-footer">
-                    </a>
+                </a>
             </li>
             <li>
                 <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
@@ -410,8 +421,8 @@
 
     </footer>
     <!--Final del footer-->
-   
+
 </body>
- 
-                            
+
+
 </html>
