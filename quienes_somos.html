@@ -17,6 +17,11 @@
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <title>quienes somos</title>
+    <!--------------bootstrap------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--------css------>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 </head>
 
 <!--Comienzo del body-->
@@ -24,94 +29,174 @@
 <body>
     <!--Comienzo del header-->
     <header>
-        <!--barra navegación-->
-        <nav>
-            <a href="/index.html"><img class="logo" src="/assets/img/imagenes index prestadores salud/logo-medilink.png"
-                    alt="logo-medilink"></a>
+        <!--------BARRA NAVEGACIÓN-------->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand img-fluid mt-5" href="/index-bootstrap.html"><img class="w-75"
+                        src="/assets/img/imagenes index prestadores salud/logo-medilink.png" alt="logo_medilink"></a>
+                <!-------navbar toggler define el botón que activa la navegación en dispositivos
+                        móviles o en pantallas de tamaño reducido.-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--------lista desordenada páginas-------->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-4 fw-bold mx-auto">
+                        <li class="nav-item">
+                            <!---active permite que se puedan ver los otros elementos cuand0 está en responsive-->
+                            <a class="nav-link active" aria-current="page" href="#" target="_parent">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/quienes_somos.html" target="_parent">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servicios.html" target="_parent">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/noticias.html" target="_parent">Noticias</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button class="nav-link bg-light" type="button" class="btn btn-outline-primary"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Newsletter
+                            </button>
 
-                    <ul class="pages">
+                            <!-- Modal -->
+                            <div class="modal fade mx-2" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header align-items-center">
+                                            <h1 class="modal-title fs-5 text-secondary" id="staticBackdropLabel">
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body px-5 mx-2">
+                                            <div class="mb-3">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label fs-5">Nombre</label>
+                                                    <input type="text" class="form-control" id="Nombre"
+                                                        placeholder="Ingrese su nombre">
+                                                </div>
+
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label fs-5">Email</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark text-white"
+                                                data-bs-dismiss="modal">Envíar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <!---acá tiene que ir el botón de login-->
+                        <button class="btn  btn-warning btn-lg" button id="login" type="submit">
+                            <a class="login_principal text-white" href="login.html" target="_parent">Login</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+            <!-------------------------FIN DE BARRA DE NAVEGACIÓN-------------------->
+        </nav>
+
+        <!---------------------------fin de header---------------------------------->
+    </header>
+
+    <div class="container my-5 pb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 mt-5">
+                <figure>
+                    <img img class="quienes w-100" src="assets/img/imagenes quienes somos/Quienes-somos-01.png"
+                        alt="quienes somos foto">
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-6 mt-5">
+                <article>
+                    <h4 class="fs-2 text-primary text-center mb-3">¿QUIENES SOMOS?</h4>
+                    <p class="somos fs-5 ms-5 ">
+                        En <b> Medilink</b>,creemos en la importancia de la atención médica personalizada y en brindar
+                        herramientas que permitan a las personas tomar el control de su bienestar. Nuestra misión es
+                        facilitar el acceso a la información médica, simplificar la gestión de la salud y fomentar una
+                        relación colaborativa entre pacientes y profesionales de la salud.
+                        Desde <b>seguimientos de citas médicas hasta recordatorios de medicamentos y monitoreo de
+                            síntomas</b>, Medilink está diseñado para ser tu aliado de confianza en cada paso de tu
+                        viaje de
+                        salud. Estamos comprometidos con la excelencia, la seguridad y la privacidad de los datos,
+                        garantizando que cada experiencia con Medilink sea segura y efectiva.</b>
+
+
+                    </p>
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-2 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright fst-italic text-center text-secondary mt-3">@ medilink 2023</p>
+                    <ul class="redes">
                         <li>
-                            <a href="#" target="_parent">Inicio </a>
+                            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
+                                    alt="facebook-footer">
+                            </a>
                         </li>
                         <li>
-                            <a href="/quienes_somos.html" target="_parent">Quienes somos </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
+                                    alt="instagram-footer">
+                            </a>
                         </li>
                         <li>
-                            <a href="/servicios.html" target="_parent">Servicios </a>
+                            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
+                                    alt="messenger-footer">
+                            </a>
                         </li>
                         <li>
-                            <a href="/noticias.html" target="_parent">Noticias</a>
+                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
+                                    alt="twitter-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
+                                    alt="whatsapp-footer"></a>
                         </li>
                     </ul>
-        
+                </div>
+            </div>
+        </div>
 
-            <!-------boton login-------->
-            <button id="login" type="button">
-                <a class="login_principal" href="login.html" target="_blank">Login</a>
-            </button>
-            <!------- FIN boton login-------->
-        </nav>
-    </header>
-    <!--Comienzo del main-->
-    <main>
-        <section class="quienes-somos">
-            <figure class="quienes">
-                <img src="assets/img/imagenes quienes somos/Quienes-somos-01.png" alt="quienes somos foto">
-            </figure>
-            <article>
-                <h4>¿QUIENES SOMOS?</h4>
-                <p class="somos">
-                    En <b> Medilink</b>,creemos en la importancia de la atención médica personalizada y en brindar
-                    herramientas que permitan a las personas tomar el control de su bienestar. Nuestra misión es
-                    facilitar el acceso a la información médica, simplificar la gestión de la salud y fomentar una
-                    relación colaborativa entre pacientes y profesionales de la salud.
-                    Desde <b>seguimientos de citas médicas hasta recordatorios de medicamentos y monitoreo de
-                        síntomas</b>, Medilink está diseñado para ser tu aliado de confianza en cada paso de tu viaje de
-                    salud. Estamos comprometidos con la excelencia, la seguridad y la privacidad de los datos,
-                    garantizando que cada experiencia con Medilink sea segura y efectiva.</b>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-                </p>
-            </article>
-
-            <!--Final del main-->
-        </section>
-    </main>
 </body>
 
-<footer>
-    <p class="copyright">@ medilink 2023</p>
-    <ul>
-        <li>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
-                    alt="facebook-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
-                    alt="instagram-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
-                    alt="messenger-footer">
-                </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
-                    alt="twitter-footer">
-                </a>
-        </li>
-        <li>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
-                    alt="whatsapp-footer">
-                </a>
-        </li>
-    </ul>
-
-</footer>
+</html>

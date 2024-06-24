@@ -17,6 +17,11 @@
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <title>noticias</title>
+    <!--------------bootstrap------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--------css------>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 </head>
 
 <!--Comienzo del body-->
@@ -24,197 +29,354 @@
 <body>
     <!--Comienzo del header-->
     <header>
-        <!--barra navegación-->
-        <nav>
-            <a href="/index.html"><img class="logo" src="/assets/img/imagenes index prestadores salud/logo-medilink.png"
-                    alt="logo-medilink"></a>
+        <!--------BARRA NAVEGACIÓN-------->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand img-fluid mt-5" href="/index-bootstrap.html"><img class="w-75"
+                        src="/assets/img/imagenes index prestadores salud/logo-medilink.png" alt="logo_medilink"></a>
+                <!-------navbar toggler define el botón que activa la navegación en dispositivos
+                        móviles o en pantallas de tamaño reducido.-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--------lista desordenada páginas-------->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-4 fw-bold mx-auto">
+                        <li class="nav-item">
+                            <!---active permite que se puedan ver los otros elementos cuand0 está en responsive-->
+                            <a class="nav-link active" aria-current="page" href="#" target="_parent">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/quienes_somos.html" target="_parent">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servicios.html" target="_parent">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/noticias.html" target="_parent">Noticias</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">                           
+             <!-- Button trigger modal -->
+             <button class="nav-link bg-light" type="button" class="btn btn-outline-primary"
+             data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Newsletter
+         </button>
 
-                    <ul class="pages">
-                        <li>
-                            <a href="#" target="_parent">Inicio </a>
-                        </li>
-                        <li>
-                            <a href="/quienes_somos.html" target="_parent">Quienes somos </a>
-                        </li>
-                        <li>
-                            <a href="/servicios.html" target="_parent">Servicios </a>
-                        </li>
-                        <li>
-                            <a href="/noticias.html" target="_parent">Noticias</a>
-                        </li>
+         <!-- Modal -->
+         <div class="modal fade mx-2" id="staticBackdrop" data-bs-backdrop="static"
+             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+             aria-hidden="true">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header align-items-center">
+                         <h1 class="modal-title fs-5 text-secondary" id="staticBackdropLabel">
+                         </h1>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal"
+                             aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body px-5 mx-2">
+                         <div class="mb-3">
+                             <div class="mb-3">
+                                 <label for="exampleFormControlTextarea1"
+                                     class="form-label fs-5">Nombre</label>
+                                 <input type="text" class="form-control" id="Nombre"
+                                     placeholder="Ingrese su nombre">
+                             </div>
+
+                             <label for="exampleFormControlInput1"
+                                 class="form-label fs-5">Email</label>
+                             <input type="email" class="form-control" id="exampleFormControlInput1"
+                                 placeholder="name@example.com">
+                         </div>
+
+                     </div>
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-dark text-white"
+                             data-bs-dismiss="modal">Envíar</button>
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+                    </li>
+
+                        <!---acá tiene que ir el botón de login-->
+                        <button class="btn  btn-warning btn-lg" button id="login" type="submit">
+                            <a class="login_principal text-white" href="login.html" target="_parent">Login</a>
+                        </button>
+
                     </ul>
-        
 
-            <!-------boton login-------->
-            <button id="login" type="button">
-                <a class="login_principal" href="login.html" target="_blank">Login</a>
-            </button>
-            <!------- FIN boton login-------->
+                </div>
+            </div>
+            <!-------------------------FIN DE BARRA DE NAVEGACIÓN-------------------->
         </nav>
+
+        <!---------------------------fin de header---------------------------------->
     </header>
     <!--Comienzo del main-->
-    <main class="main-noticias">
-        <h2 class="noticias">PORTAL MEDILINK</h2>
+    <main>
+        <h1 class="noticias fs-1 my-5 text-center fw-bold">Portal Medilink</h1>
         <!--noticias sobre bienestar-->
-        <section class="seccion_bienestar">
-            <article class="habitos_alimenticios">
-                <div class="alimentacion">
-                    <div class="alimentacion_modificada">
-                        <h3 class="titulo_bienestar">ALIMENTACIÓN SALUDABLE, VIDA PLENA</h3>
-                        <h4 class="subtitulo_bienestar">Dieta y Salud Mental: Una Relación Revelada</h4>
-                        <p class="habitos">
-                            En el fascinante mundo de la investigación científica, se ha avanzado significativamente en el entendimiento de cómo la dieta no solo influye en nuestra salud física, sino que también ejerce un impacto trascendental en nuestra salud mental. Estudios recientes, llevados a cabo por científicos apasionados y dedicados, han arrojado luz sobre la estrecha relación entre lo que comemos y nuestro bienestar psicológico.
 
-                            Las evidencias acumuladas revelan que una dieta que incorpora una abundancia de alimentos frescos y ricos en nutrientes esenciales se asocia de manera consistente con índices más bajos de ansiedad y depresión. Es un descubrimiento que redefine nuestra comprensión de la nutrición, destacando la importancia de considerar no solo la dimensión física, sino también la mental al abordar nuestras elecciones alimenticias.
-                            
-                            Entre los patrones alimenticios que han captado la atención de la comunidad científica, la dieta mediterránea emerge como un faro de bienestar. Con su enfoque en la inclusión de aceites saludables y pescado, esta dieta no solo beneficia al corazón y al sistema circulatorio, sino que también muestra impactos significativos en la salud mental. Los beneficios van más allá de la nutrición; son una inversión en la felicidad y el equilibrio emocional.
-                            
-                            En esta senda de descubrimientos, se ha observado que la reducción consciente de azúcares añadidos y grasas saturadas se correlaciona con una disminución palpable en los niveles de estrés. Estos hallazgos apuntan a la posibilidad de que nuestras elecciones alimenticias no solo afecten nuestro cuerpo físico, sino que también influyan directamente en la química cerebral, dando forma a nuestra experiencia emocional diaria.
-                            
-                            Este fascinante cruce entre la dieta y la salud mental está dando lugar a una revolución en la práctica médica. Profesionales de la salud, con una visión más holística, están integrando recomendaciones dietéticas personalizadas en el tratamiento de trastornos mentales. La alimentación consciente, una práctica que fomenta la atención plena durante las comidas, se presenta como una herramienta prometedora para mejorar tanto el cuerpo como la mente.
-                            
-                            En conclusión, estamos ante una nueva era en la que la dieta se percibe como un componente integral de nuestro bienestar total. Estamos aprendiendo a apreciar la interconexión entre lo que ponemos en nuestro plato y cómo nos sentimos emocionalmente. Este conocimiento no solo redefine la forma en que abordamos la nutrición, sino que también destaca el poder transformador que nuestras elecciones alimenticias pueden tener en nuestra salud mental y emocional.
-                            
-                           
-                        </p>
-                    </div>
-                    <figure> <img class="alimentacion_imagen"
-                            src="/assets/img/imagenes noticias/nutri-crop.jpg" alt="plato saludable">
-                    </figure>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <section class=" habitos_alimenticios d-block">
+                        <div class="card">
+                            <h5 class="card-title fs-3 text-center my-3">ALIMENTACIÓN SALUDABLE, VIDA PLENA</h5>
+                            <div class="card-body d-block">
+                                <img class="w-100" src="/assets/img/imagenes noticias/nutri-min.jpg"  alt="plato saludable">
+
+                                <h6 class="card-subtitle my-3 fs-4 text-center fw-semibold">Dieta y Salud Mental:
+                                    Una Relación Revelada</h6>
+
+                                <p class="card-text fs-5"> En el fascinante mundo de la investigación científica, se ha
+                                    avanzado significativamente en el entendimiento de cómo la dieta no solo influye en
+                                    nuestra salud física, sino que también ejerce un impacto trascendental en nuestra
+                                    salud mental. Estudios recientes, llevados a cabo por científicos apasionados y
+                                    dedicados, han arrojado luz sobre la estrecha relación entre lo que comemos y
+                                    nuestro bienestar psicológico.
+
+                                    Las evidencias acumuladas revelan que una dieta que incorpora una abundancia de
+                                    alimentos frescos y ricos en nutrientes esenciales se asocia de manera consistente
+                                    con índices más bajos de ansiedad y depresión. Es un descubrimiento que redefine
+                                    nuestra comprensión de la nutrición, destacando la importancia de considerar no solo
+                                    la dimensión física, sino también la mental al abordar nuestras elecciones
+                                    alimenticias.
+
+                                    Entre los patrones alimenticios que han captado la atención de la comunidad
+                                    científica, la dieta mediterránea emerge como un faro de bienestar. Con su enfoque
+                                    en la inclusión de aceites saludables y pescado, esta dieta no solo beneficia al
+                                    corazón y al sistema circulatorio, sino que también muestra impactos significativos
+                                    en la salud mental. Los beneficios van más allá de la nutrición; son una inversión
+                                    en la felicidad y el equilibrio emocional.
+
+                                    En esta senda de descubrimientos, se ha observado que la reducción consciente de
+                                    azúcares añadidos y grasas saturadas se correlaciona con una disminución palpable en
+                                    los niveles de estrés. Estos hallazgos apuntan a la posibilidad de que nuestras
+                                    elecciones alimenticias no solo afecten nuestro cuerpo físico, sino que también
+                                    influyan directamente en la química cerebral, dando forma a nuestra experiencia
+                                    emocional diaria.
+
+                                    Este fascinante cruce entre la dieta y la salud mental está dando lugar a una
+                                    revolución en la práctica médica. Profesionales de la salud, con una visión más
+                                    holística, están integrando recomendaciones dietéticas personalizadas en el
+                                    tratamiento de trastornos mentales. La alimentación consciente, una práctica que
+                                    fomenta la atención plena durante las comidas, se presenta como una herramienta
+                                    prometedora para mejorar tanto el cuerpo como la mente.
+
+                                    En conclusión, estamos ante una nueva era en la que la dieta se percibe como un
+                                    componente integral de nuestro bienestar total. Estamos aprendiendo a apreciar la
+                                    interconexión entre lo que ponemos en nuestro plato y cómo nos sentimos
+                                    emocionalmente. Este conocimiento no solo redefine la forma en que abordamos la
+                                    nutrición, sino que también destaca el poder transformador que nuestras elecciones
+                                    alimenticias pueden tener en nuestra salud mental y emocional.
+
+                            </div>
+                        </div>
+
+                        <div class="alimentacion">
+                            <div class="alimentacion_modificada">
+
+                                <p class="">
+                            </div>
+
+
+
+                            </p>
+                        </div>
+                    </section>
                 </div>
-            </article>
-        </section>
 
-        <section class="seccion_suenio">
-            <div class="gestion_sueño">
-                <figure>
-                    <img class="descanso" src="/assets/img/imagenes noticias/suenio.jpg" alt="higiene del suenio">
-                </figure>
-                <div class="body_gestion">
-                    <h3 class="titulo_gestion">DESCANSO RENOVADOR</h3>                    
-                    <h4 class="subtitulo_gestion">Claves para una Gestión del Sueño Óptima</h4>
-                    <p class="texto_gestion">
-                        En medio del frenesí cotidiano, con frecuencia pasamos por alto el papel fundamental que desempeña el sueño en nuestro bienestar integral. Aquí te proporcionamos consejos concisos para mejorar la calidad de tu descanso:
 
-Establece rutinas regulares: Fija horarios consistentes para acostarte y despertarte, lo que ayuda a regular tu reloj biológico y mejora la calidad del sueño.
 
-Crea un entorno propicio: Asegúrate de que tu dormitorio sea tranquilo y oscuro. Un ambiente relajado facilita la conciliación del sueño y contribuye a un descanso más reparador.
+                <div class="col-12">
+                    <section class="seccion_suenio mt-5">
+                        <div class="card">
+                            <h5 class="card-title fs-3 text-center text-warning mt-3">DESCANSO RENOVADOR</h5>
+                            <img class="descanso" src="/assets/img/imagenes noticias/suenio.jpg"
+                                alt="higiene del suenio">
 
-Limita dispositivos electrónicos: Evita el uso de dispositivos electrónicos antes de dormir, ya que la luz azul puede interferir con la producción de melatonina, la hormona del sueño.
+                            <div class="body d-block">
 
-Incorpora rituales relajantes: Practica actividades calmantes como leer o meditar antes de acostarte para preparar tu mente y cuerpo para el descanso.
+                                <h6 class="card-subtitle mb-2 fs-4 text-center fw-semibold mt-3">Claves para una Gestión
+                                    del Sueño Óptima</h6>
+                                <p class="">
+                                    En medio del frenesí cotidiano, con frecuencia pasamos por alto el papel fundamental
+                                    que desempeña el sueño en nuestro bienestar integral. Aquí te proporcionamos
+                                    consejos concisos para mejorar la calidad de tu descanso:
 
-Elige alimentos ligeros: Opta por alimentos de fácil digestión antes de dormir. Evita comidas pesadas que puedan causar malestar y dificultar el sueño.
+                                    Establece rutinas regulares: Fija horarios consistentes para acostarte y
+                                    despertarte, lo que ayuda a regular tu reloj biológico y mejora la calidad del
+                                    sueño.
 
-Haz ejercicio durante el día: La actividad física regular durante el día contribuye a un sueño más profundo y reparador en la noche.
+                                    Crea un entorno propicio: Asegúrate de que tu dormitorio sea tranquilo y oscuro. Un
+                                    ambiente relajado facilita la conciliación del sueño y contribuye a un descanso más
+                                    reparador.
 
-Gestiona el estrés: Practica técnicas de gestión del estrés, como la respiración profunda o la relajación muscular, antes de acostarte para calmar la mente.
+                                    Limita dispositivos electrónicos: Evita el uso de dispositivos electrónicos antes de
+                                    dormir, ya que la luz azul puede interferir con la producción de melatonina, la
+                                    hormona del sueño.
 
-Observa patrones de sueño: Presta atención a tus patrones de sueño y realiza ajustes según sea necesario. Escucha a tu cuerpo y adapta tu rutina de sueño en consecuencia.
+                                    Incorpora rituales relajantes: Practica actividades calmantes como leer o meditar
+                                    antes de acostarte para preparar tu mente y cuerpo para el descanso.
 
-Priorizar tu sueño no solo es una elección sabia, sino una inversión directa en tu bienestar físico y mental. Dormir bien no solo te permite descansar, sino que también contribuye a despertar renovado y listo para enfrentar cada día con energía y claridad mental. ¡Que tengas dulces sueños y despiertes revitalizado cada mañana!
-                    </p>
-                </div>                
-            </div>
-    </article>
-        </section>
+                                    Elige alimentos ligeros: Opta por alimentos de fácil digestión antes de dormir.
+                                    Evita comidas pesadas que puedan causar malestar y dificultar el sueño.
 
-        <!-- Inicio de sección educación-->
-        <section class="ejercicio">
-            <h2 class="titulo_ejercicio">Un Enfoque Integral para la Salud Mental</h2>
-            <article class="articulo_ejercicio">  
-                <div class="contenedor_principal_ejercicio">              
-                <div class="contenedor_imagenes_ejercicio">              
-                <figure class="card_ejercicio1">                   
-                    <img src="./assets/img/imagenes noticias/correr.jpg"  alt="corredores">
-                    <fig caption>running</fig>
-                </figure>
-                <figure class="card_ejercicio2">
-                    <img src="./assets/img/imagenes noticias/ejercicio_parque_min.jpg"  alt="ejercicio_aire_libre">
-                    <fig caption>Ejercicio en el parque</fig>
-                </figure>
+                                    Haz ejercicio durante el día: La actividad física regular durante el día contribuye
+                                    a un sueño más profundo y reparador en la noche.
+
+                                    Gestiona el estrés: Practica técnicas de gestión del estrés, como la respiración
+                                    profunda o la relajación muscular, antes de acostarte para calmar la mente.
+
+                                    Observa patrones de sueño: Presta atención a tus patrones de sueño y realiza ajustes
+                                    según sea necesario. Escucha a tu cuerpo y adapta tu rutina de sueño en
+                                    consecuencia.
+
+                                    Priorizar tu sueño no solo es una elección sabia, sino una inversión directa en tu
+                                    bienestar físico y mental. Dormir bien no solo te permite descansar, sino que
+                                    también contribuye a despertar renovado y listo para enfrentar cada día con energía
+                                    y claridad mental. ¡Que tengas dulces sueños y despiertes revitalizado cada mañana!
+                                </p>
+                            </div>
+                        </div>
+                        </article>
+                    </section>
+                </div>
+
+                <div class="col-12">
+                    <!-- Inicio de sección educación-->
+                    <section>
+                        <h1 class="titulo_ejercicio mt-5 text-center fw-bold">Un Enfoque Integral para la Salud Mental
+                        </h1>
+                       
+                           <div class="d-flex">
+                            <img src="./assets/img/imagenes noticias/correr.jpg" class="w-50"
+                            alt="corredores">
                 
-                <figure class="card_ejercicio3">
-                    <img src="./assets/img/imagenes noticias/pilates_min.jpg"  alt="pilates">
-                    <fig caption>pilates</fig>
-                </figure>
-            </div>
-            <div class="texto_ejercicio_container">
-                <h2 class="titulo_ejercicio">Optimizando la Mente a Través del Entrenamiento</h2>
-                <p>                
-                    En la búsqueda constante de un bienestar completo, a menudo subestimamos el poder transformador que el entrenamiento físico puede tener en nuestra salud mental. Más allá de los beneficios evidentes para el cuerpo, el ejercicio regular se erige como un pilar esencial para cultivar una mente fuerte y equilibrada.
-                    
-                    Despejando la Mente:
-                    El entrenamiento físico no solo fortalece nuestros músculos, sino que también actúa como un potente eliminador de tensiones mentales. La liberación de endorfinas durante el ejercicio no solo alivia el estrés, sino que también mejora nuestro estado de ánimo, proporcionando una perspectiva más positiva y resiliente ante los desafíos cotidianos.
-                    
-                    Conectando Cuerpo y Mente:
-                    La interconexión entre el cuerpo y la mente se vuelve evidente a medida que incorporamos el ejercicio a nuestra rutina diaria. La actividad física no solo mejora la salud cardiovascular y la fuerza muscular, sino que también nutre la salud cerebral al promover el crecimiento de nuevas neuronas y fortalecer las conexiones neuronales existentes.
-                    
-                    Combatiendo la Ansiedad y la Depresión:
-                    Numerosos estudios respaldan la idea de que el entrenamiento regular puede ser una herramienta efectiva en la gestión de la ansiedad y la depresión. La actividad física libera neurotransmisores como la serotonina y la dopamina, que desempeñan un papel crucial en la regulación del estado de ánimo y la reducción de los síntomas asociados con trastornos mentales.
-                    
-                    Rutinas Personalizadas para la Mente:
-                    Así como adaptamos nuestros entrenamientos para objetivos físicos específicos, también podemos diseñar rutinas personalizadas que beneficien directamente nuestra salud mental. Desde prácticas de mindfulness incorporadas en el entrenamiento hasta actividades que fomentan la relajación, como el yoga, hay infinitas maneras de abordar la salud mental a través del movimiento.
-                    
-                    En resumen, considerar el ejercicio como una herramienta integral para la salud mental es un enfoque que va más allá de la estética física. Al entrenar nuestro cuerpo, nutrimos nuestra mente, construyendo un puente sólido hacia el bienestar emocional y cognitivo. Este matrimonio entre el movimiento y la salud mental es una inversión valiosa, una ruta hacia una mente más fuerte y resiliente que nos permite enfrentar la vida con claridad y vitalidad.
-                    
-                    
-                    
-                    
-                    
-                    
-                </p>
+                        <img src="./assets/img/imagenes noticias/ejercicio_parque_min.jpg" class="w-50"
+                            alt="ejercicio_aire_libre">
+                 
+                           </div>
+                               
+                                  
+                          
+                          
+                     
+
+                        <div class="texto_ejercicio_container">
+                            <h2 class="titulo_ejercicio fs-2 fw-bold my-3 text-center">Optimizando la mente a través del
+                                entrenamiento
+                            </h2>
+                            <p>
+                                En la búsqueda constante de un bienestar completo, a menudo subestimamos el poder
+                                transformador que el entrenamiento físico puede tener en nuestra salud mental. Más allá
+                                de los beneficios evidentes para el cuerpo, el ejercicio regular se erige como un pilar
+                                esencial para cultivar una mente fuerte y equilibrada.
+
+                                Despejando la Mente:
+                                El entrenamiento físico no solo fortalece nuestros músculos, sino que también actúa como
+                                un potente eliminador de tensiones mentales. La liberación de endorfinas durante el
+                                ejercicio no solo alivia el estrés, sino que también mejora nuestro estado de ánimo,
+                                proporcionando una perspectiva más positiva y resiliente ante los desafíos cotidianos.
+
+                                Conectando Cuerpo y Mente:
+                                La interconexión entre el cuerpo y la mente se vuelve evidente a medida que incorporamos
+                                el ejercicio a nuestra rutina diaria. La actividad física no solo mejora la salud
+                                cardiovascular y la fuerza muscular, sino que también nutre la salud cerebral al
+                                promover el crecimiento de nuevas neuronas y fortalecer las conexiones neuronales
+                                existentes.
+
+                                Combatiendo la Ansiedad y la Depresión:
+                                Numerosos estudios respaldan la idea de que el entrenamiento regular puede ser una
+                                herramienta efectiva en la gestión de la ansiedad y la depresión. La actividad física
+                                libera neurotransmisores como la serotonina y la dopamina, que desempeñan un papel
+                                crucial en la regulación del estado de ánimo y la reducción de los síntomas asociados
+                                con trastornos mentales.
+
+                                Rutinas Personalizadas para la Mente:
+                                Así como adaptamos nuestros entrenamientos para objetivos físicos específicos, también
+                                podemos diseñar rutinas personalizadas que beneficien directamente nuestra salud mental.
+                                Desde prácticas de mindfulness incorporadas en el entrenamiento hasta actividades que
+                                fomentan la relajación, como el yoga, hay infinitas maneras de abordar la salud mental a
+                                través del movimiento.
+
+                                En resumen, considerar el ejercicio como una herramienta integral para la salud mental
+                                es un enfoque que va más allá de la estética física. Al entrenar nuestro cuerpo,
+                                nutrimos nuestra mente, construyendo un puente sólido hacia el bienestar emocional y
+                                cognitivo. Este matrimonio entre el movimiento y la salud mental es una inversión
+                                valiosa, una ruta hacia una mente más fuerte y resiliente que nos permite enfrentar la
+                                vida con claridad y vitalidad.
+
+                            </p>
+                        </div>
+
+                    </section>
+                    <!-- fin de sección educación-->
+
+
+                </div>
+
             </div>
         </div>
 
-            </article>
-        </section>
-        <!-- fin de sección educación-->
-        <!--aside-->
-        
-       
     </main>
 
-    <section>
-        <article>
-    <figure></figure>
-        <figure caption>
+    
+    <footer class="text-center mt-2 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="copyright fst-italic  text-center text-secondary">@ medilink 2023</p>
+                    <ul class="redes">
+                        <li>
+                            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
+                                    alt="facebook-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
+                                    alt="instagram-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
+                                    alt="messenger-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
+                                    alt="twitter-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
+                                    alt="whatsapp-footer"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        </figure>
-    </article>
-    </section>
+    </footer>
+
+    <!--Final del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
-<footer>
-    <p class="copyright">@ medilink 2023</p>
-    <ul>
-        <li>
-            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
-                    alt="facebook-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
-                    alt="instagram-footer">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
-                    alt="messenger-footer">
-        </li>
-        <li>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
-                    alt="twitter-footer">
-        </li>
-        <li>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
-                    alt="whatsapp-footer">
-        </li>
-    </ul>
-
-</footer>
+</html>

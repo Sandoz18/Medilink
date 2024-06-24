@@ -10,31 +10,30 @@
     <meta name="author" content="Irene Imbriani">
     <!------favicon------->
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!--------google fonts-------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <!------fontawesome---------->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <title>index_bootstrap</title>     
+    <title>index_bootstrap</title>
     <!--------------bootstrap------------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-       <!--------css------>
-       <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--------css------>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 </head>
 
 <!---------------------COMIENZO DEL BODY--------------------->
 
 <body>
-
     <!-------COMIENZO DE HEADER-------->
     <header>
         <!--------BARRA NAVEGACIÓN-------->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html"><img class="logo"
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container ">
+                <a class="navbar-brand img-fluid mt-5" href="/index-bootstrap.html"><img class="w-75"
                         src="/assets/img/imagenes index prestadores salud/logo-medilink.png" alt="logo_medilink"></a>
                 <!-------navbar toggler define el botón que activa la navegación en dispositivos
                         móviles o en pantallas de tamaño reducido.-->
@@ -45,7 +44,7 @@
                 </button>
                 <!--------lista desordenada páginas-------->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1 fw-bold fs-5 mx-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-4 fw-bold mx-auto">
                         <li class="nav-item">
                             <!---active permite que se puedan ver los otros elementos cuand0 está en responsive-->
                             <a class="nav-link active" aria-current="page" href="#" target="_parent">Inicio</a>
@@ -59,9 +58,53 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/noticias.html" target="_parent">Noticias</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/noticias.html" target="_parent">Contactanos</a>
                         </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button class="nav-link bg-light" type="button" class="btn btn-outline-primary"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                             Newsletter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade mx-2" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header align-items-center">
+                                            <h1 class="modal-title fs-5 text-secondary" id="staticBackdropLabel">
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body px-5 mx-2">
+                                            <div class="mb-3">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label fs-5">Nombre</label>
+                                                    <input type="text" class="form-control" id="Nombre"
+                                                        placeholder="Ingrese su nombre">
+                                                </div>
+
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label fs-5">Email</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark text-white"
+                                                data-bs-dismiss="modal">Envíar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
                         <!---acá tiene que ir el botón de login-->
                         <button class="btn  btn-warning btn-lg" button id="login" type="submit">
                             <a class="login_principal text-white" href="login.html" target="_parent">Login</a>
@@ -69,35 +112,31 @@
 
                     </ul>
 
-
-
                 </div>
             </div>
             <!-------------------------FIN DE BARRA DE NAVEGACIÓN-------------------->
         </nav>
 
-
         <!---------------------------fin de header---------------------------------->
     </header>
 
-    <!--comienzo main-->
-    <main>
-
-        <!---contenedor de la sección banner-------->
-        <div class="container mt-3">
+    <!--------------------COMIENZO DEL MAIN---------------->
+    <!---el padding top 3 es para que me tome el bg-light no borrar!!!!!!!!-->
+    <main class="pt-5">
+        <!---CONTENEDOR DE LA SECCIÓN BANNER-------->
+        <div class="container">
             <div class="row text-center">
                 <!---ocupa 12 columnas y a partir del tamaño grande ocupa 4-->
-                <div class="col-12 col-lg-6 mt-3">
+                <div class="col-12 col-lg-6 lh-1">
                     <article>
-                        <h1 class="fw-bold">ENFOCATE EN TUS PACIENTES.</h1><!--tagline-->
-                        <h2 class="fw-semibold">Nosotros nos encargamos del resto.</h2>
-                        <p class="fs-4 fw-normal text-success">MEDILINK SISTEMA DE CITAS MÉDICAS</p>
+                        <h1 class="fw-bold mt-5 lh-1">ENFOCATE EN TUS PACIENTES.</h1><!--tagline-->
+                        <h1 class="fw-semibold fs-2 lh-1">Nosotros hacemos el resto.</h1>
+                        <p class="fs-3 fw-semibold text-success ">Medilink sistema de citas médicas</p>
                         <!--------lista desordenada con ítems para bullets--------->
-                        <ul class="d-block justify-content-center mt-5">
+                        <ul class="d-block text-start ms-5 ps-5 mt-3">
                             <li><i class="fas fa-solid fa-check"></i> Citas automatizadas </li>
                             <li><i class="fas fa-solid fa-check"></i> Informes online </li>
                             <li><i class="fas fa-solid fa-check"></i> Pagos online </li>
-                            <li><i class="fas fa-solid fa-check"></i> Herramientas automatizadas</li>
                             <li><i class="fas fa-solid fa-check"></i> Herramientas automatizadas</li>
                             <li><i class="fas fa-solid fa-check"></i> Herramientas automatizadas</li>
                             <li><i class="fas fa-solid fa-check"></i> Control sobre el historial médico de tus pacientes
@@ -109,301 +148,537 @@
                 <!---ocupa 12 columnas y a partir del tamaño grande ocupa 4-->
                 <div class="col-12 col-lg-6">
                     <figure>
-                        <img class="w-80"
+                        <img class="w-75 mt-4"
                             src="/assets/img/imagenes index prestadores salud/doctor imagen principal-01.png"
                             alt="foto-portada-medilink">
 
                     </figure>
                 </div>
-                <!---ocupa 12 columnas y a partir del tamaño grande ocupa 4--> 
-              
-                    <article>
-                        <div class="col-12 mt-5">
-                        <!---inicio de formulario de contacto-->
-      <section class="formulario">
+                <!---ocupa 12 columnas y a partir del tamaño grande ocupa 4-->
 
-      
-        
-                
-                <div class="container mt-5">
-                    <div class="row bg-success">
-                        <div class="col-12 col-lg-6">
-                
-                    
-                
-                
-              
+
+                <!---inicio de formulario de contacto-->
+
+                <div class="container my-5">
+                    <div class="container d-flex justify-content-center mt-5 bg-light w-50 pt-5 rounded-3">
+                        <div class="row">
+                            <div class="col col-md-12">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <legend class="text-center mb-3 fs-4 fw-lighter text-dark">Escribinos y te
+                                            contactaremos a la brevedad</legend>
+
+                                        <div class="form-group mb-4">
+                                            <div class="col-md-12">
+                                                <input id="fname" name="name" type="text" placeholder="Nombre"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group mb-4">
+                                            <div class="col-md-12">
+                                                <input id="email" name="email" type="text" placeholder="Email"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <div class="col-md-12">
+                                                <input id="phone" name="phone" type="text" placeholder="Teléfono"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <div class="col-md-12">
+                                                <textarea class="form-control text-center " rows="4" required
+                                                    id="message" name="message"
+                                                    placeholder="Ingresá tu mensaje (max 400)" rows="7"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <div class="col-md-12 text-center">
+                                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                            </div>
+                                        </div>
+                            </div>
+                            </fieldset>
+                            </form>
+
                         </div>
                     </div>
                 </div>
-              </section>
-        
-                        <!-------formulario de contacto
-                        <form class="contact-form">
-                            <h3 class="contacto">Si estás interesado en nuestros servicios escribinos y te contactaremos a la
-                                brevedad.</h3>
-                            <fieldset>
-                                <label for="nombre"></label>
-                                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
-                                <label for="email"></label>
-                                <input type="email" placeholder="Ingresá tu email" id="email" name="email" required>
-                                <label for="mensaje"></label>
-                                <textarea id="mensaje" placeholder="Escribí tu mensaje (max 400 caracteres)" name="mensaje"
-                                    rows="4" required></textarea>
-                                <button id="login" type="button">
-                                    <a class="login_principal" href="login.html" target="_parent">Login</a>
-                                </button>
-                            </fieldset>
-                        </form>
-        
-                        <-----fin de formulario de contacto-------->
-                        </div>
-                    </article>
-               
+
+
+
+
             </div>
         </div>
-        
 
 
+        <!---FIN MAIN-->
     </main>
-    <!-------fin de seccion principal--------->
-
-    <!--sección-->
-    <section class="analizando">
-        <div class="container">
+    <!-------SECCIÓN ANALIZANDO------->
+    <section class="analizando bg-primary py-5">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li class="icons">
-                            <!--esto en un futuro lleva botones y ventanas modales para explicar los 3 pasos-->
-                            <figure>
-                                <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-01.png">
-                            </figure>
-                                <h4>ANALIZÁ TU PRÁCTICA MÉDICA</h4>
-                             
-                                <p class="necesidades">Entender y abordar las necesidades de tu práctica médica es clave
-                                    para
-                                    ofrecer atención de calidad. Mantenete actualizado en investigación médica y personaliza
-                                    la
-                                    atención para cada paciente. Este enfoque integral garantiza una práctica médica
-                                    eficiente y
-                                    centrada en las necesidades tanto del personal como de los pacientes.</p>
-                          
-                        </li>
-                        <li class="icons">
-                            <figure>
-                                
-                                <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-02.png">
-                            </figure>
-                            <h4>IMPLEMENTÁ NUESTROS SERVICIOS</h4>
-                            
-                            <p class="necesidades">Optimiza tu experiencia médica con nuestra app de citas y registros.
-                                Implementa
-                                nuestros servicios para agendar citas fácilmente y gestionar tu historial médico de forma
-                                accesible.
-                                Simplifica tu atención médica, recibe recordatorios y mantén un seguimiento personalizado.
+                <!---ICONO-->
+                <div class="col-12 col-lg-4">
+                    <div class="icons">
+
+                        <figure>
+                            <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-01.png">
+                        </figure>
+                        <h4>ANALIZÁ TU PRÁCTICA MÉDICA</h4>
+                        <div class="container lh-1 fs-5">
+                            <p class="necesidades">Entender y abordar las necesidades de tu práctica
+                                médica es clave
+                                para
+                                ofrecer atención de calidad. Mantenete actualizado en investigación
+                                médica y personaliza
+                                la
+                                atención para cada paciente. Este enfoque integral garantiza una
+                                práctica médica
+                                eficiente y
+                                centrada en las necesidades tanto del personal como de los pacientes.
                             </p>
-                        </li>
-    
-    
-                        <li class="icons">
-    
-                            <figure>
-                                <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-03.png">
-                            </figure>
-                            <h4>CONTACTANOS Y OPTIMIZÁ TU RENDIMIENTO</h4>
-                       
-                            <p class="necesidades">¡Optimiza tu rendimiento hoy mismo! Contáctanos para descubrir cómo
+
+                        </div>
+                    </div>
+                </div>
+                <!---ICONO-->
+                <div class=" col-12 col-lg-4 ">
+                    <div class="icons">
+                        <figure>
+                            <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-02.png">
+                        </figure>
+                        <h4>IMPLEMENTÁ NUESTROS SERVICIOS</h4>
+                        <div class="container lh-1 ms-1 me-1">
+                            <p class="necesidades">Optimiza tu experiencia médica con nuestra app de citas y
+                                registros.
+                                Implementa
+                                nuestros servicios para agendar citas fácilmente y gestionar tu historial
+                                médico de
+                                forma
+                                accesible.
+                                Simplifica tu atención médica, recibe recordatorios y mantén un seguimiento
+                                personalizado.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!---ICONO-->
+                <div class="col-12 col-lg-4">
+                    <div class="icons">
+
+                        <figure>
+                            <img class="#" src="/assets/img/imagenes index prestadores salud/imagenes-03.png">
+                        </figure>
+                        <h4>CONTACTANOS Y OPTIMIZÁ TU RENDIMIENTO</h4>
+                        <div class="container bg-primary  lh-1 ms-1 me-1 ">
+                            <p class="necesidades">¡Optimiza tu rendimiento hoy mismo! Contáctanos para
+                                descubrir cómo
                                 podemos
-                                ayudarte a alcanzar tus metas. Estamos aquí para brindarte soluciones efectivas y
+                                ayudarte a alcanzar tus metas. Estamos aquí para brindarte soluciones
+                                efectivas y
                                 personalizadas.
                                 ¡No esperes más, contáctanos ahora y potencia tu rendimiento al máximo!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!---------INICIO SECCIÓN REVIEWS---------->
+    <section class="comentarios py-5">
+        <div class="container py-3">
+            <div class="row">
+                <!---DOCTOR PERENGANO-->
+                <div class="col-12 col-lg-4">
+                    <div class="card mx-0 my-0 ">
+                        <div class="card-header">
+                            <p class="card-text fs-5 lh-1 fw-normal">"Esta aplicación ha transformado por
+                                completo mi experiencia con la atención médica. La
+                                capacidad de reservar citas de manera fácil y rápida es impresionante. Además, tener
+                                acceso
+                                instantáneo a mi historial médico me brinda tranquilidad. ¡Altamente recomendada para
+                                simplificar el proceso de atención médica!"</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-12  d-flex align-items-center">
+                                <img class="w-50"
+                                    src="/assets/img/imagenes index prestadores salud/foto-señor-cardiologo.png">
+                                <div class="container">
+                                    <h5 class="card-title">Juan Perez</h5>
+                                    <h5 class="card-title">Cardiólogo</h5>
+
+
+                                    <div class="col-12 d-flex mb-3">
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---DOCTOR PERENGANO-->
+                <div class="col-12 col-lg-4">
+                    <div class="card mx-0 my-0">
+                        <div class="card-header">
+                            <p class="card-text fs-5 lh-1  fw-normal">"Nunca antes había sido tan sencillo organizar mis
+                                citas médicas.
+                                La aplicación es intuitiva y fácil de usar. Los recordatorios automáticos me han ayudado
+                                a no olvidar ninguna cita importante
+                                . ¡Definitivamente una herramienta esencial para quienes buscan optimizar su tiempo y
+                                cuidado de la salud!"</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-12 d-flex align-items-center">
+                                <img class="w-50"
+                                    src="/assets/img/imagenes index prestadores salud/foto-hombre-medico.png">
+                                <div class="container">
+                                    <h5 class="card-title">José Rodriguez</h5>
+                                    <h5 class="card-title">Médico general</h5>
+
+
+                                    <div class="col-12 d-flex mb-3">
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---DOCTOR PERENGANO-->
+                <div class="col-12 col-lg-4">
+                    <div class="card mx-0 my-0">
+                        <div class="card-header">
+                            <p class="card-text fs-5 lh-1  fw-normal">
+                                "Esta aplicación ha reunido todo lo que necesito en un solo lugar. Desde reservar citas
+                                hasta llevar
+                                un seguimiento de mi historial médico, todo está al alcance de mi mano. La interfaz es
+                                limpia y moderna,
+                                lo que hace que la experiencia sea aún mejor.
+                                Una aplicación indispensable para simplificar su relación con la atención médica."
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-12  d-flex align-items-center">
+                                <img class="w-50"
+                                    src="/assets/img/imagenes index prestadores salud/foto-mujer-pediatra.png">
+                                <div class="container">
+                                    <h5 class="card-title">Maria Gomez</h5>
+                                    <h5 class="card-title">Pediatra</h5>
+
+
+                                    <div class="col-12 d-flex mb-3">
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                        <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------FIN SECCIÓN REVIEWS------------>
+
+    <!------SECCIÓN CALL TO ACTION------>
+    <section>
+        <div class="container  pb-5">
+            <div class="row">
+                <div class="col">
+                    <h4 class="pacientes text-success mb-3">Que tus pacientes sean prioridad</h4>
+                   
+            </div>
+
+    </section>
+
+    <!--INICIO SECCIÓN FAQ-->
+    <section class="faq py-5">
+        <div class="container mt-5">
+            <div class="titulo-faq fs-2 fw-bold mt-5">Preguntas Frecuentes</div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    ¿Cómo puedo reservar una cita con un médico en la aplicación?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Sigue estos sencillos pasos:
+                                    Inicio de sesión: Ingresa a tu cuenta de Medilink con tu nombre de usuario y
+                                    contraseña.
+                                    Buscar médico: Utiliza nuestra función de búsqueda para encontrar al médico que
+                                    deseas consultar. Puedes buscar por especialidad, nombre del médico o ubicación.
+                                    Seleccionar horario: Revisa la disponibilidad de horarios del médico y elige el
+                                    momento que mejor se ajuste a tu agenda.
+                                    Confirmación de cita: Una vez seleccionado el horario, confirma la cita médica.
+                                    Recibirás una notificación de confirmación en la aplicación y por correo
+                                    electrónico.
+                                    ¡Y eso es todo! Estarás listo para tu consulta médica con total facilidad y
+                                    conveniencia a través de Medilink.
+                                    Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactar
+                                    con nuestro equipo de soporte. Estamos aquí para ayudarte en cada paso del camino.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    ¿Puedo cancelar o modificar una cita existente a través de la aplicación?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Sí, en Medilink puedes cancelar o modificar una cita existente de manera conveniente
+                                    a través de nuestra aplicación:
+                                    Inicia sesión en tu cuenta de Medilink.
+                                    Ve a la sección de "Mis Citas" o "Agenda".
+                                    Busca la cita que deseas cancelar o modificar.
+                                    Selecciona la opción correspondiente para cancelar o modificar la cita.
+                                    Confirma los cambios y recibirás una notificación de actualización.
+                                    Si necesitas ayuda adicional o tienes alguna pregunta, nuestro equipo de soporte
+                                    está disponible para asistirte en todo momento.
+
+                                    ¡Gracias por confiar en Medilink para gestionar tus citas médicas de manera
+                                    eficiente y fácil!</div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Cómo se manejan los recordatorios de citas en la aplicación?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    En MediLink, los recordatorios de citas se gestionan de manera eficiente
+                                    y personalizada. Puedes configurar notificaciones push, correos electrónicos
+                                    y SMS para asegurarte de no olvidar ninguna cita. Además, MediLink se sincroniza
+                                    con calendarios populares como Google Calendar y Outlook, facilitando
+                                    la integración con tu agenda diaria. Puedes personalizar la frecuencia
+                                    y el tipo de recordatorios, así como gestionar y modificar citas desde la
+                                    aplicación en cualquier momento.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Cómo garantiza la aplicación la privacidad y seguridad de mis datos médicos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    En MediLink, la privacidad y seguridad de tus datos médicos son nuestra prioridad.
+                                    Utilizamos cifrado de extremo a extremo para proteger tu información y
+                                    autenticación de dos factores para asegurar el acceso. Cumplimos con
+                                    normativas como GDPR y HIPAA, y solo los profesionales médicos autorizados
+                                    pueden acceder a tus datos. Además, realizamos monitoreos y auditorías
+                                    regulares de seguridad. Con MediLink, tus datos médicos están siempre
+                                    seguros y protegidos.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Es posible acceder a mi historial médico completo y agregar información nueva?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Sí, en MediLink puedes acceder a tu historial médico
+                                    completo y agregar información nueva fácilmente. Esto te permite mantener tus
+                                    registros médicos actualizados y centralizados.</div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿La aplicación ofrece asistencia en tiempo real para problemas técnicos o preguntas?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Sí, MediLink ofrece asistencia en
+                                    tiempo real para problemas técnicos y preguntas
+                                    a través de chat en vivo y soporte telefónico.
+                                </div>
+                            </div>
+                        </div>
+                        <!---un item del accordion-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Qué medidas de accesibilidad tiene la aplicación?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">En MediLink, hemos implementado varias medidas
+                                    de accesibilidad, como soporte para lectores de pantalla, textos ajustables,
+                                    y una interfaz intuitiva para asegurar que todos los usuarios, incluidas
+                                    personas con discapacidades, puedan usar la aplicación sin problemas.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Cómo recibo notificaciones sobre resultados de pruebas o información médica
+                                    importante?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    En MediLink, recibes notificaciones
+                                    sobre resultados de pruebas e información médica
+                                    importante a través de notificaciones push en la aplicación,
+                                    correos electrónicos y, si lo prefieres, SMS.
+                                    Puedes personalizar tus preferencias en la configuración de la app.
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    ¿Cómo se manejan los pagos relacionados con las citas médicas en la aplicación
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    En MediLink, los pagos relacionados con las citas médicas se manejan
+                                    de manera segura y conveniente.
+                                    Puedes pagar directamente a través de la aplicación
+                                    utilizando tarjetas de crédito, débito o billeteras electrónicas.
+                                    Además, recibes confirmaciones y recibos electrónicos de tus transacciones.
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-----FINAL SECCIÓN FAQ-->
+
+    <footer class="text-center mt-2 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="copyright fst-italic  text-center text-secondary">@ medilink 2023</p>
+                    <ul class="redes">
+                        <li>
+                            <a href=https://www.facebook.com/Myrna.Mynkoff target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
+                                    alt="facebook-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
+                                    alt="instagram-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
+                                    alt="messenger-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
+                                    alt="twitter-footer">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
+                                    alt="whatsapp-footer"></a>
                         </li>
                     </ul>
                 </div>
             </div>
-    
         </div>
-       
-    </section>
-    <!--Inicio sección rewievs-->
-    
-    <section class="comentarios">
-      <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-4 bg-dark">
-                <div class="card">
-                    <div class="card-header">
-                        <p class="card-text fs-5 lh-1 bg-success fw-normal"> "Esta aplicación ha transformado por completo mi experiencia con la atención médica. La
-                            capacidad de reservar citas de manera fácil y rápida es impresionante. Además, tener acceso
-                            instantáneo a mi historial médico me brinda tranquilidad. ¡Altamente recomendada para
-                            simplificar el proceso de atención médica!"</p>                      
-                    </div>
-                    <div class="card-body">
-                        <div class="col-12 bg-warning text-align-center">
-                            <img class=" w-50"
-                            src="/assets/img/imagenes index prestadores salud/foto-señor-cardiologo.png">    
-                             <h5 class="card-title">Juan Perez</h5>
-                            <h5 class="card-title">Cardiólogo</h5> 
-                               
-                                 
-                      <div class="col-12 d-flex justify-content-center mb-3">
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                  </div>
-                </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-lg-4 bg-dark">
-                <div class="card">
-                    <div class="card-header">
-                        <p class="card-text fs-5 lh-1 bg-success fw-normal"> "Esta aplicación ha transformado por completo mi experiencia con la atención médica. La
-                            capacidad de reservar citas de manera fácil y rápida es impresionante. Además, tener acceso
-                            instantáneo a mi historial médico me brinda tranquilidad. ¡Altamente recomendada para
-                            simplificar el proceso de atención médica!"</p>                      
-                    </div>
-                    <div class="card-body">
-                        <div class="col-12 bg-warning text-align-center">
-                            <img class=" w-50"
-                            src="/assets/img/imagenes index prestadores salud/foto-señor-cardiologo.png">    
-                             <h5 class="card-title">Juan Perez</h5>
-                            <h5 class="card-title">Cardiólogo</h5> 
-                               
-                                 
-                      <div class="col-12 d-flex justify-content-center mb-3">
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                  </div>
-                </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-lg-4 bg-dark">
-                <div class="card">
-                    <div class="card-header">
-                        <p class="card-text fs-5 lh-1 bg-success fw-normal"> "Esta aplicación ha transformado por completo mi experiencia con la atención médica. La
-                            capacidad de reservar citas de manera fácil y rápida es impresionante. Además, tener acceso
-                            instantáneo a mi historial médico me brinda tranquilidad. ¡Altamente recomendada para
-                            simplificar el proceso de atención médica!"</p>                      
-                    </div>
-                    <div class="card-body">
-                        <div class="col-12 bg-warning text-align-center">
-                            <img class=" w-50"
-                            src="/assets/img/imagenes index prestadores salud/foto-señor-cardiologo.png">    
-                             <h5 class="card-title">Juan Perez</h5>
-                            <h5 class="card-title">Cardiólogo</h5> 
-                               
-                                 
-                      <div class="col-12 d-flex justify-content-center mb-3">
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                      <i class="fas fa-solid fa-star" style="color: #ffa400;"></i>
-                  </div>
-                </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!--Fin sección rewievs-->
-    <!--sección de enfocate en tus paciente-->
-    <section class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5 class="pacientes">Enfocate en tus pacientes</h5>
-
-                    <div class="registro">
-                        <button id="login" type="button">
-                            <a class="login_principal" href="/index.html">Contactanos</a>
-                    </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!--texto enfocate en tus pacientes-->
-       
-
-    </section>
-
-    <!--inicio faq-->
-    <section class="faq">
-        <div class="titulo-faq">Preguntas Frecuentes</div>
-        <ul>
-            <li>¿Cómo puedo reservar una cita con un médico en la aplicación? <i class="fas fa-solid fa-plus"></i></li>
-            <li>¿Puedo cancelar o modificar una cita existente a través de la aplicación? <i
-                    class="fas fa-solid fa-plus"></i></li>
-            <li>¿Cómo se manejan los recordatorios de citas en la aplicación?<i class="fas fa-solid fa-plus"></i></li>
-            <li>¿Es posible acceder a mi historial médico completo y agregar información nueva? <i
-                    class="fas fa-solid fa-plus"></i></li>
-            <li>¿Cómo garantiza la aplicación la privacidad y seguridad de mis datos médicos? <i
-                    class="fas fa-solid fa-plus"></i></li>
-            <li>¿La aplicación ofrece asistencia en tiempo real para problemas técnicos o preguntas?<i
-                    class="fas fa-solid fa-plus"></i></li>
-            <li>¿Cómo recibo notificaciones sobre resultados de pruebas o información médica importante? <i
-                    class="fas fa-solid fa-plus"></i></li>
-            <li>¿Qué medidas de accesibilidad tiene la aplicación? <i class="fas fa-solid fa-plus"></i></li>
-            <li>¿Cómo se manejan los pagos relacionados con las citas médicas en la aplicación?<i
-                    class="fas fa-solid fa-plus"></i></li>
-
-
-        </ul>
-    </section>
-    <!--inicio faq-->
-    <!--Final del body-->
-    <!--Principio del footer-->
-    <footer>
-
-        <p class="copyright">@ medilink 2023</p>
-        <ul>
-            <li>
-                <a href=https://www.facebook.com/Myrna.Mynkoff target="_blan">
-                    <img src="/assets/img/imagenes index prestadores salud/facebook-transparencia-footer.png"
-                        alt="facebook-footer">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="/assets/img/imagenes index prestadores salud/instagram-transparencia-footer.png"
-                        alt="instagram-footer">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/messenger/?locale=es_LA" target="_blank">
-                    <img src="/assets/img/imagenes index prestadores salud/messenger-transparencia-footer.png"
-                        alt="messenger-footer">
-            </li>
-            <li>
-                <a href="https://twitter.com/?lang=es" target="_blank">
-                    <img src="/assets/img/imagenes index prestadores salud/twitter-transparencia-footer.png"
-                        alt="twitter-footer">
-            </li>
-            <li>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                    <img src="/assets/img/imagenes index prestadores salud/whatsapp-transparencia-footer.png"
-                        alt="whatsapp-footer">
-            </li>
-
-
-
-        </ul>
 
     </footer>
     <!--Final del footer-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
+<!--IMPORTANTE AGREGAR MODAL CON REDES SOCIALES Y MAILTO VER SI SE PUEDE TAMBIEN PONER UN FONDO AL FORMULARIO-->
 
 </html>
